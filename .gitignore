@@ -1,0 +1,29 @@
+# Large data files (RData objects from Kraken/HUMAnN3)
+GeigerData2*
+GeigerData_*
+GeigerLongGenusTable.csv
+GeigerFiles_*.tsv
+GeigerFiles_*.csv
+
+# Old data directories
+DataBefore*/
+
+# Large office documents
+*.pptx
+*.xlsx
+*.docx
+
+# Image files (keep PDFs, exclude PNGs)
+*.png
+
+# R session files
+.Rhistory
+.RData
+*.rds
+
+# Git LFS attributes (if previously used)
+.gitattributes
+
+# OS files
+.DS_Store
+Thumbs.db

@@ -1,0 +1,22 @@
+Pathway,Young_C57BL-Untransplanted,Old_C57BL-Untransplanted,Difference,FC,logratio,Unadjusted_p,FDR
+PWY0-1241: ADP-L-glycero-&beta;-D-manno-heptose biosynthesis,87,1,86,87,6.442943496,5.98E-05,0.025280544
+PWY-6527: stachyose degradation,145,190,-45,-1.310344828,-0.389946518,0.000268008,0.056683666
+PWY-241: C4 photosynthetic carbon assimilation cycle  NADP-ME type,271,376,-105,-1.387453875,-0.47243981,0.001607219,0.159503976
+PWY0-845: superpathway of pyridoxal 5'-phosphate biosynthesis and salvage,307,3,304,102.3333333,6.677132345,0.001742031,0.159503976
+THRESYN-PWY: superpathway of L-threonine biosynthesis,343,314,29,1.092356688,0.127444017,0.002262468,0.159503976
+PWY0-162: superpathway of pyrimidine ribonucleotides de novo biosynthesis,278,123,155,2.260162602,1.176426567,0.002262468,0.159503976
+PWY-7117: C4 photosynthetic carbon assimilation cycle  PEPCK type,277,369,-92,-1.332129964,-0.41373484,0.003458487,0.208991408
+PYRIDOXSYN-PWY: pyridoxal 5'-phosphate biosynthesis I,291,6,285,48.5,5.599912842,0.005577722,0.294922064
+FUCCAT-PWY: fucose degradation,287,126,161,2.277777778,1.187627003,0.008381705,0.357922844
+PWY-6606: guanosine nucleotides degradation II,61,110,-49,-1.803278689,-0.850622376,0.009493054,0.357922844
+PWY-6545: pyrimidine deoxyribonucleotides de novo biosynthesis III,224,286,-62,-1.276785714,-0.352516415,0.009493054,0.357922844
+PWY0-1298: superpathway of pyrimidine deoxyribonucleosides degradation,22,298,-276,-13.54545455,-3.759736902,0.01015384,0.357922844
+COBALSYN-PWY: adenosylcobalamin salvage from cobinamide I,4,348,-344,-87,-6.442943496,0.015393626,0.466390068
+PWY-6969: TCA cycle V (2-oxoglutarate:ferredoxin oxidoreductase),7,362,-355,-51.71428571,-5.692490965,0.015436078,0.466390068
+PWY0-1586: peptidoglycan maturation (meso-diaminopimelate containing),241,319,-78,-1.323651452,-0.404523278,0.023485516,0.662291551
+PWY-6608: guanosine nucleotides degradation III,97,138,-41,-1.422680412,-0.508611615,0.03273497,0.784556393
+PWY0-862: (5Z)-dodecenoate biosynthesis I,48,359,-311,-7.479166667,-2.902877533,0.040390624,0.784556393
+HEME-BIOSYNTHESIS-II: heme b biosynthesis I (aerobic),312,4,308,78,6.285402219,0.040390624,0.784556393
+PWY-7282: 4-amino-2-methyl-5-diphosphomethylpyrimidine biosynthesis II,323,4,319,80.75,6.335390355,0.040390624,0.784556393
+P164-PWY: purine nucleobases degradation I (anaerobic),62,102,-40,-1.64516129,-0.718229032,0.045079202,0.784556393
+PWY-7383: anaerobic energy metabolism (invertebrates  cytosol),208,122,86,1.704918033,0.769702381,0.035564328,0.784556393

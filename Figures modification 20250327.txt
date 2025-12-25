@@ -1,0 +1,10 @@
+Fig 1
+
+B Only show ctrl verus old. Change colors to match the figure. Calculate significance and Bray-Curtis distances (to prove they're significantly different). Will 
+
+D and E : show Rag1 WT and KO and KO transplanted with HSC. Only use young mice but don't label them as young versus old. 
+
+Fig 4 Supplemental. Think of how to change the focus from differences in microbiome composition between experiments but focus on changes between the groups. Can we do a delta between groups as the figure. Can we do venn diagram to show similar species changes per experiment. Could consider doing three different PCA.
+
+Fig 4. Do Venn diagram to show pathways that are differentially regulated in transplanted and old-young mice
+Fig 4G look at whether casiene increases abundance of the pyridoxal 5' pathways

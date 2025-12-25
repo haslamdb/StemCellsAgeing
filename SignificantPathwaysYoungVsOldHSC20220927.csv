@@ -1,0 +1,7 @@
+Pathway,RAG1-Young_HSCs,RAG1-Old_HSCs,Difference,FC,logratio,Unadjusted_p,FDR
+PYRIDOXSYN-PWY: pyridoxal 5'-phosphate biosynthesis I,70,10,60,7,2.807354922,0.022884449,0.996815976
+PWY-5723: Rubisco shunt,333,142,191,2.345070423,1.229631248,0.023125834,0.996815976
+PWY-241: C4 photosynthetic carbon assimilation cycle NADP-ME type,77,15,62,5.133333333,2.359895945,0.026096294,0.996815976
+PWY0-845: superpathway of pyridoxal 5'-phosphate biosynthesis and salvage,115,21,94,5.476190476,2.453172628,0.032047136,0.996815976
+P162-PWY: L-glutamate degradation V (via hydroxyglutarate),134,2,132,67,6.06608919,0.035247998,0.996815976
+PWY-6470: peptidoglycan biosynthesis V (&beta;-lactam resistance),166,1,165,166,7.375039431,0.035247998,0.996815976

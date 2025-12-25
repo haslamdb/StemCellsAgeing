@@ -1,0 +1,5 @@
+"Comparison","Metric","n1","n2","Cohen_d"
+"Y_vs_O","Shannon",11,11,0.354
+"DY_vs_DO","Shannon",16,15,NA
+"Y_vs_RAG1","Shannon",11,6,-1.769
+"DY_vs_Y","Shannon",16,11,NA
