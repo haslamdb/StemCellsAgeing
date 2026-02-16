@@ -1,0 +1,828 @@
+2026-02-16 12:47:09.073215 INFO::Writing function arguments to log file
+2026-02-16 12:47:09.073753 DEBUG::Function arguments
+2026-02-16 12:47:09.073945 DEBUG::Output folder: MaAsLin2_DY_vs_DO_BatchCorrected
+2026-02-16 12:47:09.074107 DEBUG::Min Abundance: 0.000000
+2026-02-16 12:47:09.074261 DEBUG::Min Prevalence: 0.100000
+2026-02-16 12:47:09.074406 DEBUG::Normalization: NONE
+2026-02-16 12:47:09.074554 DEBUG::Transform: LOG
+2026-02-16 12:47:09.074695 DEBUG::Analysis method: LM
+2026-02-16 12:47:09.074837 DEBUG::Max significance: 0.250000
+2026-02-16 12:47:09.074973 DEBUG::Random effects:
+2026-02-16 12:47:09.075107 DEBUG::Fixed effects: Groups,Experiment
+2026-02-16 12:47:09.075243 DEBUG::Correction method: BH
+2026-02-16 12:47:09.075377 DEBUG::Standardize: TRUE
+2026-02-16 12:47:09.075505 DEBUG::Cores: 1
+2026-02-16 12:47:09.075628 INFO::Verifying options selected are valid
+2026-02-16 12:47:09.076011 INFO::Determining format of input files
+2026-02-16 12:47:09.076364 INFO::Input format is data samples as rows and metadata samples as rows
+2026-02-16 12:47:09.077465 DEBUG::A total of 30 samples were found in both the data and metadata
+2026-02-16 12:47:09.077631 DEBUG::Reordering data/metadata to use same sample ordering
+2026-02-16 12:47:09.079642 INFO::Formula for fixed effects: expr ~  Groups + Experiment
+2026-02-16 12:47:09.080181 INFO::Factor detected for categorial metadata 'Experiment'. Provide a reference argument or manually set factor ordering to change reference level.
+2026-02-16 12:47:09.080486 INFO::Filter data based on min abundance and min prevalence
+2026-02-16 12:47:09.080788 INFO::Total samples in data: 30
+2026-02-16 12:47:09.081071 INFO::Min samples required with min abundance for a feature not to be filtered: 3.000000
+2026-02-16 12:47:09.083821 INFO::Total filtered features: 130
+2026-02-16 12:47:09.084304 INFO::Filtered feature names from abundance and prevalence filtering: ALLANTOINDEG.PWY..superpathway.of.allantoin.degradation.in.yeast, ARGDEG.PWY..superpathway.of.L.arginine..putrescine..and.4.aminobutanoate.degradation, ARGININE.SYN4.PWY..L.ornithine.biosynthesis.II, COBALSYN.PWY..superpathway.of.adenosylcobalamin.salvage.from.cobinamide.I, CRNFORCAT.PWY..creatinine.degradation.I, FOLSYN.PWY..superpathway.of.tetrahydrofolate.biosynthesis.and.salvage, GALACTITOLCAT.PWY..galactitol.degradation, GLYCOCAT.PWY..glycogen.degradation.I, GLYCOLYSIS.E.D..superpathway.of.glycolysis.and.the.Entner.Doudoroff.pathway, GLYCOLYSIS.TCA.GLYOX.BYPASS..superpathway.of.glycolysis..pyruvate.dehydrogenase..TCA..and.glyoxylate.bypass, HCAMHPDEG.PWY..3.phenylpropanoate.and.3..3.hydroxyphenyl.propanoate.degradation.to.2.oxopent.4.enoate, HEME.BIOSYNTHESIS.II..heme.b.biosynthesis.I..aerobic., HEMESYN2.PWY..heme.b.biosynthesis.II..oxygen.independent., METHGLYUT.PWY..superpathway.of.methylglyoxal.degradation, METSYN.PWY..superpathway.of.L.homoserine.and.L.methionine.biosynthesis, NAD.BIOSYNTHESIS.II..NAD.salvage.pathway.II, NAGLIPASYN.PWY..lipid.IVA.biosynthesis..E..coli., ORNARGDEG.PWY..superpathway.of.L.arginine.and.L.ornithine.degradation, ORNDEG.PWY..superpathway.of.ornithine.degradation, P105.PWY..TCA.cycle.IV..2.oxoglutarate.decarboxylase., P122.PWY..heterolactic.fermentation, P124.PWY..Bifidobacterium.shunt, P125.PWY..superpathway.of..R.R..butanediol.biosynthesis, P163.PWY..L.lysine.fermentation.to.acetate.and.butanoate, P185.PWY..formaldehyde.assimilation.III..dihydroxyacetone.cycle., P23.PWY..reductive.TCA.cycle.I, P621.PWY..nylon.6.oligomer.degradation, PPGPPMET.PWY..ppGpp.metabolism, PROPFERM.PWY..L.alanine.fermentation.to.propanoate.and.acetate, PROTOCATECHUATE.ORTHO.CLEAVAGE.PWY..protocatechuate.degradation.II..ortho.cleavage.pathway., PRPP.PWY..superpathway.of.histidine..purine..and.pyrimidine.biosynthesis, PWY.1269..CMP.3.deoxy.D.manno.octulosonate.biosynthesis, PWY.1861..formaldehyde.assimilation.II..assimilatory.RuMP.Cycle., PWY.3781..aerobic.respiration.I..cytochrome.c., PWY.4321..L.glutamate.degradation.IV, PWY.4702..phytate.degradation.I, PWY.4722..creatinine.degradation.II, PWY.5088..L.glutamate.degradation.VIII..to.propanoate., PWY.5130..2.oxobutanoate.degradation.I, PWY.5136..fatty.acid..beta..oxidation.II..plant.peroxisome., PWY.5138..unsaturated..even.numbered.fatty.acid..beta..oxidation, PWY.5173..superpathway.of.acetyl.CoA.biosynthesis, PWY.5304..superpathway.of.sulfur.oxidation..Acidianus.ambivalens., PWY.5464..superpathway.of.cytosolic.glycolysis..plants...pyruvate.dehydrogenase.and.TCA.cycle, PWY.5497..purine.nucleobases.degradation.II..anaerobic., PWY.561..superpathway.of.glyoxylate.cycle.and.fatty.acid.degradation, PWY.5656..mannosylglycerate.biosynthesis.I, PWY.5705..allantoin.degradation.to.glyoxylate.III, PWY.5791..1.4.dihydroxy.2.naphthoate.biosynthesis.II..plants., PWY.5837..1.4.dihydroxy.2.naphthoate.biosynthesis.I, PWY.5837..2.carboxy.1.4.naphthoquinol.biosynthesis, PWY.5838..superpathway.of.menaquinol.8.biosynthesis.I, PWY.5840..superpathway.of.menaquinol.7.biosynthesis, PWY.5845..superpathway.of.menaquinol.9.biosynthesis, PWY.5850..superpathway.of.menaquinol.6.biosynthesis.I, PWY.5860..superpathway.of.demethylmenaquinol.6.biosynthesis.I, PWY.5861..superpathway.of.demethylmenaquinol.8.biosynthesis, PWY.5861..superpathway.of.demethylmenaquinol.8.biosynthesis.I, PWY.5862..superpathway.of.demethylmenaquinol.9.biosynthesis, PWY.5863..superpathway.of.phylloquinol.biosynthesis, PWY.5896..superpathway.of.menaquinol.10.biosynthesis, PWY.5897..superpathway.of.menaquinol.11.biosynthesis, PWY.5898..superpathway.of.menaquinol.12.biosynthesis, PWY.5899..superpathway.of.menaquinol.13.biosynthesis, PWY.5918..superpathway.of.heme.b.biosynthesis.from.glutamate, PWY.5920..superpathway.of.heme.biosynthesis.from.glycine, PWY.5971..palmitate.biosynthesis.II..bacteria.and.plants., PWY.6113..superpathway.of.mycolate.biosynthesis, PWY.622..starch.biosynthesis, PWY.6263..superpathway.of.menaquinol.8.biosynthesis.II, PWY.6293..superpathway.of.L.cysteine.biosynthesis..fungi., PWY.6318..L.phenylalanine.degradation.IV..mammalian..via.side.chain., PWY.6471..peptidoglycan.biosynthesis.IV..Enterococcus.faecium., PWY.6531..mannitol.cycle, PWY.6583..pyruvate.fermentation.to.butanol.I, PWY.6612..superpathway.of.tetrahydrofolate.biosynthesis, PWY.6690..cinnamate.and.3.hydroxycinnamate.degradation.to.2.oxopent.4.enoate, PWY.6803..phosphatidylcholine.acyl.editing, PWY.6834..spermidine.biosynthesis.III, PWY.6863..pyruvate.fermentation.to.hexanol..engineered., PWY.6876..isopropanol.biosynthesis, PWY.6895..superpathway.of.thiamine.diphosphate.biosynthesis.II, PWY.6953..dTDP.3.acetamido..alpha..D.fucose.biosynthesis, PWY.6953..dTDP.3.acetamido.3.6.dideoxy..alpha..D.galactose.biosynthesis, PWY.6961..L.ascorbate.degradation.II..bacterial..aerobic., PWY.6969..TCA.cycle.V..2.oxoglutarate.ferredoxin.oxidoreductase., PWY.7003..glycerol.degradation.to.butanol, PWY.7013...S..propane.1.2.diol.degradation, PWY.7013..L.1.2.propanediol.degradation, PWY.7046..4.coumarate.degradation..anaerobic., PWY.7090..UDP.2.3.diacetamido.2.3.dideoxy..alpha..D.mannuronate.biosynthesis, PWY.7094..fatty.acid.salvage, PWY.7115..C4.photosynthetic.carbon.assimilation.cycle..NAD.ME.type, PWY.7196..superpathway.of.pyrimidine.ribonucleosides.salvage, PWY.7204..pyridoxal.5..phosphate.salvage.II..plants., PWY.7209..superpathway.of.pyrimidine.ribonucleosides.degradation, PWY.7210..pyrimidine.deoxyribonucleotides.biosynthesis.from.CTP, PWY.7211..superpathway.of.pyrimidine.deoxyribonucleotides.de.novo.biosynthesis, PWY.7254..TCA.cycle.VII..acetate.producers., PWY.7312..dTDP.D..beta..fucofuranose.biosynthesis, PWY.7332..superpathway.of.UDP.N.acetylglucosamine.derived.O.antigen.building.blocks.biosynthesis, PWY.7345..superpathway.of.anaerobic.sucrose.degradation, PWY.7371..1.4.dihydroxy.6.naphthoate.biosynthesis.II, PWY.7385..1.3.propanediol.biosynthesis..engineered., PWY.7392..taxadiene.biosynthesis..engineered., PWY.7396..butanol.and.isobutanol.biosynthesis..engineered., PWY.7456...beta...1.4..mannan.degradation, PWY.7616..methanol.oxidation.to.carbon.dioxide, PWY.7688..dTDP..alpha..D.ravidosamine.and.dTDP.4.acetyl..alpha..D.ravidosamine.biosynthesis, PWY.7883..anhydromuropeptides.recycling.II, PWY.7992..superpathway.of.menaquinol.8.biosynthesis.III, PWY.801..homocysteine.and.cysteine.interconversion, PWY.8073..lipid.IVA.biosynthesis..P..putida., PWY.8131..5..deoxyadenosine.degradation.II, PWY.922..mevalonate.pathway.I, PWY0.1261..anhydromuropeptides.recycling.I, PWY0.1415..superpathway.of.heme.biosynthesis.from.uroporphyrinogen.III, PWY1G.0..mycothiol.biosynthesis, PWY3DJ.35471..L.ascorbate.biosynthesis.IV, PWY3O.4107..NAD.salvage.pathway.V..PNC.V.cycle., PWY66.367..ketogenesis, PWY66.391..fatty.acid..beta..oxidation.VI..mammalian.peroxisome., PWY66.398..TCA.cycle.III..animals., PWY66.430..myristate.biosynthesis..mitochondria., PYRIDNUCSAL.PWY..NAD.salvage.pathway.I, PYRIDNUCSAL.PWY..NAD.salvage.pathway.I..PNC.VI.cycle., REDCITCYC..TCA.cycle.VI..Helicobacter., RUMP.PWY..formaldehyde.oxidation.I, TCA.GLYOX.BYPASS..superpathway.of.glyoxylate.bypass.and.TCA, UDPNACETYLGALSYN.PWY..UDP.N.acetyl.D.glucosamine.biosynthesis.II
+2026-02-16 12:47:09.087286 INFO::Total filtered features with variance filtering: 0
+2026-02-16 12:47:09.087679 INFO::Filtered feature names from variance filtering:
+2026-02-16 12:47:09.087978 INFO::Running selected normalization method: NONE
+2026-02-16 12:47:09.088258 INFO::Applying z-score to standardize continuous metadata
+2026-02-16 12:47:09.090334 INFO::Running selected transform method: LOG
+2026-02-16 12:47:09.093071 INFO::Running selected analysis method: LM
+2026-02-16 12:47:09.093453 INFO::Fitting model to feature number 1, X1CMET2.PWY..N10.formyl.tetrahydrofolate.biosynthesis
+2026-02-16 12:47:09.09503 INFO::Fitting model to feature number 2, X1CMET2.PWY..folate.transformations.III..E..coli.
+2026-02-16 12:47:09.096509 INFO::Fitting model to feature number 3, ANAEROFRUCAT.PWY..homolactic.fermentation
+2026-02-16 12:47:09.097877 INFO::Fitting model to feature number 4, ANAGLYCOLYSIS.PWY..glycolysis.III..from.glucose.
+2026-02-16 12:47:09.099258 INFO::Fitting model to feature number 5, ARG.POLYAMINE.SYN..superpathway.of.arginine.and.polyamine.biosynthesis
+2026-02-16 12:47:09.100648 INFO::Fitting model to feature number 6, ARGININE.SYN4.PWY..L.ornithine.de.novo..biosynthesis
+2026-02-16 12:47:09.101976 INFO::Fitting model to feature number 7, ARGORNPROST.PWY..arginine..ornithine.and.proline.interconversion
+2026-02-16 12:47:09.103268 INFO::Fitting model to feature number 8, ARGSYN.PWY..L.arginine.biosynthesis.I..via.L.ornithine.
+2026-02-16 12:47:09.104543 INFO::Fitting model to feature number 9, ARGSYNBSUB.PWY..L.arginine.biosynthesis.II..acetyl.cycle.
+2026-02-16 12:47:09.105874 INFO::Fitting model to feature number 10, ARO.PWY..chorismate.biosynthesis.I
+2026-02-16 12:47:09.107114 INFO::Fitting model to feature number 11, ASPASN.PWY..superpathway.of.L.aspartate.and.L.asparagine.biosynthesis
+2026-02-16 12:47:09.108341 INFO::Fitting model to feature number 12, BIOTIN.BIOSYNTHESIS.PWY..biotin.biosynthesis.I
+2026-02-16 12:47:09.109549 INFO::Fitting model to feature number 13, BRANCHED.CHAIN.AA.SYN.PWY..superpathway.of.branched.amino.acid.biosynthesis
+2026-02-16 12:47:09.110749 INFO::Fitting model to feature number 14, BRANCHED.CHAIN.AA.SYN.PWY..superpathway.of.branched.chain.amino.acid.biosynthesis
+2026-02-16 12:47:09.111956 INFO::Fitting model to feature number 15, CALVIN.PWY..Calvin.Benson.Bassham.cycle
+2026-02-16 12:47:09.113164 INFO::Fitting model to feature number 16, CENTFERM.PWY..pyruvate.fermentation.to.butanoate
+2026-02-16 12:47:09.114376 INFO::Fitting model to feature number 17, CITRULBIO.PWY..L.citrulline.biosynthesis
+2026-02-16 12:47:09.11568 INFO::Fitting model to feature number 18, COA.PWY.1..coenzyme.A.biosynthesis.II..mammalian.
+2026-02-16 12:47:09.116953 INFO::Fitting model to feature number 19, COA.PWY.1..superpathway.of.coenzyme.A.biosynthesis.III..mammals.
+2026-02-16 12:47:09.11821 INFO::Fitting model to feature number 20, COA.PWY..coenzyme.A.biosynthesis.I
+2026-02-16 12:47:09.119445 INFO::Fitting model to feature number 21, COA.PWY..coenzyme.A.biosynthesis.I..prokaryotic.
+2026-02-16 12:47:09.12068 INFO::Fitting model to feature number 22, COBALSYN.PWY..adenosylcobalamin.salvage.from.cobinamide.I
+2026-02-16 12:47:09.121939 INFO::Fitting model to feature number 23, COLANSYN.PWY..colanic.acid.building.blocks.biosynthesis
+2026-02-16 12:47:09.123204 INFO::Fitting model to feature number 24, COMPLETE.ARO.PWY..superpathway.of.aromatic.amino.acid.biosynthesis
+2026-02-16 12:47:09.124442 INFO::Fitting model to feature number 25, DAPLYSINESYN.PWY..L.lysine.biosynthesis.I
+2026-02-16 12:47:09.125721 INFO::Fitting model to feature number 26, DENOVOPURINE2.PWY..superpathway.of.purine.nucleotides.de.novo.biosynthesis.II
+2026-02-16 12:47:09.126936 INFO::Fitting model to feature number 27, DTDPRHAMSYN.PWY..dTDP..beta..L.rhamnose.biosynthesis
+2026-02-16 12:47:09.128124 INFO::Fitting model to feature number 28, DTDPRHAMSYN.PWY..dTDP.L.rhamnose.biosynthesis.I
+2026-02-16 12:47:09.129403 INFO::Fitting model to feature number 29, FAO.PWY..fatty.acid..beta..oxidation.I
+2026-02-16 12:47:09.130629 INFO::Fitting model to feature number 30, FASYN.ELONG.PWY..fatty.acid.elongation....saturated
+2026-02-16 12:47:09.131876 INFO::Fitting model to feature number 31, FASYN.INITIAL.PWY..superpathway.of.fatty.acid.biosynthesis.initiation..E..coli.
+2026-02-16 12:47:09.133184 INFO::Fitting model to feature number 32, FERMENTATION.PWY..mixed.acid.fermentation
+2026-02-16 12:47:09.134417 INFO::Fitting model to feature number 33, FUC.RHAMCAT.PWY..superpathway.of.fucose.and.rhamnose.degradation
+2026-02-16 12:47:09.135591 INFO::Fitting model to feature number 34, FUCCAT.PWY..fucose.degradation
+2026-02-16 12:47:09.136758 INFO::Fitting model to feature number 35, GALACT.GLUCUROCAT.PWY..superpathway.of.hexuronide.and.hexuronate.degradation
+2026-02-16 12:47:09.13794 INFO::Fitting model to feature number 36, GALACTARDEG.PWY..D.galactarate.degradation.I
+2026-02-16 12:47:09.139114 INFO::Fitting model to feature number 37, GALACTUROCAT.PWY..D.galacturonate.degradation.I
+2026-02-16 12:47:09.140279 INFO::Fitting model to feature number 38, GLCMANNANAUT.PWY..superpathway.of.N.acetylglucosamine..N.acetylmannosamine.and.N.acetylneuraminate.degradation
+2026-02-16 12:47:09.141457 INFO::Fitting model to feature number 39, GLUCARDEG.PWY..D.glucarate.degradation.I
+2026-02-16 12:47:09.142608 INFO::Fitting model to feature number 40, GLUCARGALACTSUPER.PWY..superpathway.of.D.glucarate.and.D.galactarate.degradation
+2026-02-16 12:47:09.143826 INFO::Fitting model to feature number 41, GLUCONEO.PWY..gluconeogenesis.I
+2026-02-16 12:47:09.145075 INFO::Fitting model to feature number 42, GLUCOSE1PMETAB.PWY..glucose.and.glucose.1.phosphate.degradation
+2026-02-16 12:47:09.146223 INFO::Fitting model to feature number 43, GLUCUROCAT.PWY..superpathway.of..beta..D.glucuronide.and.D.glucuronate.degradation
+2026-02-16 12:47:09.147382 INFO::Fitting model to feature number 44, GLUCUROCAT.PWY..superpathway.of..beta..D.glucuronosides.degradation
+2026-02-16 12:47:09.148535 INFO::Fitting model to feature number 45, GLUDEG.I.PWY..GABA.shunt
+2026-02-16 12:47:09.149672 INFO::Fitting model to feature number 46, GLUTORN.PWY..L.ornithine.biosynthesis
+2026-02-16 12:47:09.150816 INFO::Fitting model to feature number 47, GLUTORN.PWY..L.ornithine.biosynthesis.I
+2026-02-16 12:47:09.151968 INFO::Fitting model to feature number 48, GLYCOCAT.PWY..glycogen.degradation.I..bacterial.
+2026-02-16 12:47:09.153129 INFO::Fitting model to feature number 49, GLYCOGENSYNTH.PWY..glycogen.biosynthesis.I..from.ADP.D.Glucose.
+2026-02-16 12:47:09.15431 INFO::Fitting model to feature number 50, GLYCOLYSIS.E.D..superpathway.of.glycolysis.and.Entner.Doudoroff
+2026-02-16 12:47:09.155485 INFO::Fitting model to feature number 51, GLYCOLYSIS..glycolysis.I..from.glucose.6.phosphate.
+2026-02-16 12:47:09.156646 INFO::Fitting model to feature number 52, GLYOXYLATE.BYPASS..glyoxylate.cycle
+2026-02-16 12:47:09.157774 INFO::Fitting model to feature number 53, GOLPDLCAT.PWY..superpathway.of.glycerol.degradation.to.1.3.propanediol
+2026-02-16 12:47:09.158911 INFO::Fitting model to feature number 54, HEME.BIOSYNTHESIS.II..heme.biosynthesis.I..aerobic.
+2026-02-16 12:47:09.16005 INFO::Fitting model to feature number 55, HEMESYN2.PWY..heme.biosynthesis.II..anaerobic.
+2026-02-16 12:47:09.161207 INFO::Fitting model to feature number 56, HEXITOLDEGSUPER.PWY..superpathway.of.hexitol.degradation..bacteria.
+2026-02-16 12:47:09.162343 INFO::Fitting model to feature number 57, HISDEG.PWY..L.histidine.degradation.I
+2026-02-16 12:47:09.163493 INFO::Fitting model to feature number 58, HISTSYN.PWY..L.histidine.biosynthesis
+2026-02-16 12:47:09.164639 INFO::Fitting model to feature number 59, HOMOSER.METSYN.PWY..L.methionine.biosynthesis.I
+2026-02-16 12:47:09.165778 INFO::Fitting model to feature number 60, HSERMETANA.PWY..L.methionine.biosynthesis.III
+2026-02-16 12:47:09.166937 INFO::Fitting model to feature number 61, ILEUSYN.PWY..L.isoleucine.biosynthesis.I..from.threonine.
+2026-02-16 12:47:09.168088 INFO::Fitting model to feature number 62, KETOGLUCONMET.PWY..ketogluconate.metabolism
+2026-02-16 12:47:09.169233 INFO::Fitting model to feature number 63, LACTOSECAT.PWY..lactose.and.galactose.degradation.I
+2026-02-16 12:47:09.17036 INFO::Fitting model to feature number 64, MET.SAM.PWY..superpathway.of.S.adenosyl.L.methionine.biosynthesis
+2026-02-16 12:47:09.1715 INFO::Fitting model to feature number 65, METH.ACETATE.PWY..methanogenesis.from.acetate
+2026-02-16 12:47:09.172629 INFO::Fitting model to feature number 66, METSYN.PWY..L.homoserine.and.L.methionine.biosynthesis
+2026-02-16 12:47:09.173772 INFO::Fitting model to feature number 67, NAGLIPASYN.PWY..lipid.IVA.biosynthesis
+2026-02-16 12:47:09.174907 INFO::Fitting model to feature number 68, NONMEVIPP.PWY..methylerythritol.phosphate.pathway.I
+2026-02-16 12:47:09.17607 INFO::Fitting model to feature number 69, NONOXIPENT.PWY..pentose.phosphate.pathway..non.oxidative.branch.
+2026-02-16 12:47:09.177219 INFO::Fitting model to feature number 70, NONOXIPENT.PWY..pentose.phosphate.pathway..non.oxidative.branch..I
+2026-02-16 12:47:09.178364 INFO::Fitting model to feature number 71, OANTIGEN.PWY..O.antigen.building.blocks.biosynthesis..E..coli.
+2026-02-16 12:47:09.179499 INFO::Fitting model to feature number 72, P108.PWY..pyruvate.fermentation.to.propanoate.I
+2026-02-16 12:47:09.18066 INFO::Fitting model to feature number 73, P161.PWY..acetylene.degradation
+2026-02-16 12:47:09.1818 INFO::Fitting model to feature number 74, P161.PWY..acetylene.degradation..anaerobic.
+2026-02-16 12:47:09.182941 INFO::Fitting model to feature number 75, P162.PWY..L.glutamate.degradation.V..via.hydroxyglutarate.
+2026-02-16 12:47:09.184091 INFO::Fitting model to feature number 76, P164.PWY..purine.nucleobases.degradation.I..anaerobic.
+2026-02-16 12:47:09.185258 INFO::Fitting model to feature number 77, P4.PWY..superpathway.of.L.lysine..L.threonine.and.L.methionine.biosynthesis.I
+2026-02-16 12:47:09.186385 INFO::Fitting model to feature number 78, P41.PWY..pyruvate.fermentation.to.acetate.and..S..lactate.I
+2026-02-16 12:47:09.187528 INFO::Fitting model to feature number 79, P42.PWY..incomplete.reductive.TCA.cycle
+2026-02-16 12:47:09.188665 INFO::Fitting model to feature number 80, P441.PWY..superpathway.of.N.acetylneuraminate.degradation
+2026-02-16 12:47:09.1898 INFO::Fitting model to feature number 81, P461.PWY..hexitol.fermentation.to.lactate..formate..ethanol.and.acetate
+2026-02-16 12:47:09.190954 INFO::Fitting model to feature number 82, P562.PWY..myo.inositol.degradation.I
+2026-02-16 12:47:09.192118 INFO::Fitting model to feature number 83, PANTO.PWY..phosphopantothenate.biosynthesis.I
+2026-02-16 12:47:09.19327 INFO::Fitting model to feature number 84, PANTOSYN.PWY..pantothenate.and.coenzyme.A.biosynthesis.I
+2026-02-16 12:47:09.194423 INFO::Fitting model to feature number 85, PANTOSYN.PWY..superpathway.of.coenzyme.A.biosynthesis.I..bacteria.
+2026-02-16 12:47:09.195557 INFO::Fitting model to feature number 86, PENTOSE.P.PWY..pentose.phosphate.pathway
+2026-02-16 12:47:09.1967 INFO::Fitting model to feature number 87, PEPTIDOGLYCANSYN.PWY..peptidoglycan.biosynthesis.I..meso.diaminopimelate.containing.
+2026-02-16 12:47:09.197836 INFO::Fitting model to feature number 88, PHOSLIPSYN.PWY..superpathway.of.phospholipid.biosynthesis.I..bacteria.
+2026-02-16 12:47:09.198971 INFO::Fitting model to feature number 89, POLYAMINSYN3.PWY..superpathway.of.polyamine.biosynthesis.II
+2026-02-16 12:47:09.200116 INFO::Fitting model to feature number 90, POLYAMSYN.PWY..superpathway.of.polyamine.biosynthesis.I
+2026-02-16 12:47:09.201261 INFO::Fitting model to feature number 91, POLYISOPRENSYN.PWY..polyisoprenoid.biosynthesis..E..coli.
+2026-02-16 12:47:09.202406 INFO::Fitting model to feature number 92, PPGPPMET.PWY..ppGpp.biosynthesis
+2026-02-16 12:47:09.203549 INFO::Fitting model to feature number 93, PWY.1042..glycolysis.IV
+2026-02-16 12:47:09.204702 INFO::Fitting model to feature number 94, PWY.1042..glycolysis.IV..plant.cytosol.
+2026-02-16 12:47:09.205837 INFO::Fitting model to feature number 95, PWY.1269..CMP.3.deoxy.D.manno.octulosonate.biosynthesis.I
+2026-02-16 12:47:09.206992 INFO::Fitting model to feature number 96, PWY.1861..formaldehyde.assimilation.II..RuMP.Cycle.
+2026-02-16 12:47:09.208131 INFO::Fitting model to feature number 97, PWY.241..C4.photosynthetic.carbon.assimilation.cycle..NADP.ME.type
+2026-02-16 12:47:09.209293 INFO::Fitting model to feature number 98, PWY.2723..trehalose.degradation.V
+2026-02-16 12:47:09.210448 INFO::Fitting model to feature number 99, PWY.2941..L.lysine.biosynthesis.II
+2026-02-16 12:47:09.211592 INFO::Fitting model to feature number 100, PWY.2942..L.lysine.biosynthesis.III
+2026-02-16 12:47:09.212745 INFO::Fitting model to feature number 101, PWY.3001..superpathway.of.L.isoleucine.biosynthesis.I
+2026-02-16 12:47:09.213895 INFO::Fitting model to feature number 102, PWY.3841..folate.transformations.II
+2026-02-16 12:47:09.215052 INFO::Fitting model to feature number 103, PWY.3841..folate.transformations.II..plants.
+2026-02-16 12:47:09.216222 INFO::Fitting model to feature number 104, PWY.4041...gamma..glutamyl.cycle
+2026-02-16 12:47:09.217394 INFO::Fitting model to feature number 105, PWY.4242..pantothenate.and.coenzyme.A.biosynthesis.III
+2026-02-16 12:47:09.218575 INFO::Fitting model to feature number 106, PWY.4981..L.proline.biosynthesis.II..from.arginine.
+2026-02-16 12:47:09.219759 INFO::Fitting model to feature number 107, PWY.4984..urea.cycle
+2026-02-16 12:47:09.220938 INFO::Fitting model to feature number 108, PWY.5005..biotin.biosynthesis.II
+2026-02-16 12:47:09.222107 INFO::Fitting model to feature number 109, PWY.5022..4.aminobutanoate.degradation.V
+2026-02-16 12:47:09.223276 INFO::Fitting model to feature number 110, PWY.5030..L.histidine.degradation.III
+2026-02-16 12:47:09.224438 INFO::Fitting model to feature number 111, PWY.5083..NAD.NADH.phosphorylation.and.dephosphorylation
+2026-02-16 12:47:09.225604 INFO::Fitting model to feature number 112, PWY.5097..L.lysine.biosynthesis.VI
+2026-02-16 12:47:09.226769 INFO::Fitting model to feature number 113, PWY.5100..pyruvate.fermentation.to.acetate.and.lactate.II
+2026-02-16 12:47:09.227928 INFO::Fitting model to feature number 114, PWY.5103..L.isoleucine.biosynthesis.III
+2026-02-16 12:47:09.229095 INFO::Fitting model to feature number 115, PWY.5104..L.isoleucine.biosynthesis.IV
+2026-02-16 12:47:09.230267 INFO::Fitting model to feature number 116, PWY.5121..superpathway.of.geranylgeranyl.diphosphate.biosynthesis.II..via.MEP.
+2026-02-16 12:47:09.231432 INFO::Fitting model to feature number 117, PWY.5136..fatty.acid..beta..oxidation.II..peroxisome.
+2026-02-16 12:47:09.232591 INFO::Fitting model to feature number 118, PWY.5154..L.arginine.biosynthesis.III..via.N.acetyl.L.citrulline.
+2026-02-16 12:47:09.233747 INFO::Fitting model to feature number 119, PWY.5177..glutaryl.CoA.degradation
+2026-02-16 12:47:09.234902 INFO::Fitting model to feature number 120, PWY.5188..tetrapyrrole.biosynthesis.I..from.glutamate.
+2026-02-16 12:47:09.236091 INFO::Fitting model to feature number 121, PWY.5189..tetrapyrrole.biosynthesis.II..from.glycine.
+2026-02-16 12:47:09.237264 INFO::Fitting model to feature number 122, PWY.5265..peptidoglycan.biosynthesis.II..staphylococci.
+2026-02-16 12:47:09.238426 INFO::Fitting model to feature number 123, PWY.5345..superpathway.of.L.methionine.biosynthesis..by.sulfhydrylation.
+2026-02-16 12:47:09.239599 INFO::Fitting model to feature number 124, PWY.5347..superpathway.of.L.methionine.biosynthesis..transsulfuration.
+2026-02-16 12:47:09.24075 INFO::Fitting model to feature number 125, PWY.5367..petroselinate.biosynthesis
+2026-02-16 12:47:09.241902 INFO::Fitting model to feature number 126, PWY.5384..sucrose.degradation.IV..sucrose.phosphorylase.
+2026-02-16 12:47:09.243054 INFO::Fitting model to feature number 127, PWY.5484..glycolysis.II..from.fructose.6.phosphate.
+2026-02-16 12:47:09.244224 INFO::Fitting model to feature number 128, PWY.5505..L.glutamate.and.L.glutamine.biosynthesis
+2026-02-16 12:47:09.245399 INFO::Fitting model to feature number 129, PWY.5659..GDP.mannose.biosynthesis
+2026-02-16 12:47:09.246574 INFO::Fitting model to feature number 130, PWY.5667..CDP.diacylglycerol.biosynthesis.I
+2026-02-16 12:47:09.247745 INFO::Fitting model to feature number 131, PWY.5675..nitrate.reduction.V..assimilatory.
+2026-02-16 12:47:09.248906 INFO::Fitting model to feature number 132, PWY.5676..acetyl.CoA.fermentation.to.butanoate.II
+2026-02-16 12:47:09.250073 INFO::Fitting model to feature number 133, PWY.5686..UMP.biosynthesis
+2026-02-16 12:47:09.251252 INFO::Fitting model to feature number 134, PWY.5686..UMP.biosynthesis.I
+2026-02-16 12:47:09.252406 INFO::Fitting model to feature number 135, PWY.5690..TCA.cycle.II..plants.and.fungi.
+2026-02-16 12:47:09.253576 INFO::Fitting model to feature number 136, PWY.5695..inosine.5..phosphate.degradation
+2026-02-16 12:47:09.254742 INFO::Fitting model to feature number 137, PWY.5695..urate.biosynthesis.inosine.5..phosphate.degradation
+2026-02-16 12:47:09.255922 INFO::Fitting model to feature number 138, PWY.5723..Rubisco.shunt
+2026-02-16 12:47:09.257079 INFO::Fitting model to feature number 139, PWY.5910..superpathway.of.geranylgeranyldiphosphate.biosynthesis.I..via.mevalonate.
+2026-02-16 12:47:09.258249 INFO::Fitting model to feature number 140, PWY.5913..TCA.cycle.VI..obligate.autotrophs.
+2026-02-16 12:47:09.259408 INFO::Fitting model to feature number 141, PWY.5913..partial.TCA.cycle..obligate.autotrophs.
+2026-02-16 12:47:09.260582 INFO::Fitting model to feature number 142, PWY.5918..superpathay.of.heme.biosynthesis.from.glutamate
+2026-02-16 12:47:09.261775 INFO::Fitting model to feature number 143, PWY.5941..glycogen.degradation.II
+2026-02-16 12:47:09.262934 INFO::Fitting model to feature number 144, PWY.5941..glycogen.degradation.II..eukaryotic.
+2026-02-16 12:47:09.264085 INFO::Fitting model to feature number 145, PWY.5971..palmitate.biosynthesis..type.II.fatty.acid.synthase.
+2026-02-16 12:47:09.265284 INFO::Fitting model to feature number 146, PWY.5973..cis.vaccenate.biosynthesis
+2026-02-16 12:47:09.266453 INFO::Fitting model to feature number 147, PWY.5981..CDP.diacylglycerol.biosynthesis.III
+2026-02-16 12:47:09.267612 INFO::Fitting model to feature number 148, PWY.5989..stearate.biosynthesis.II..bacteria.and.plants.
+2026-02-16 12:47:09.268775 INFO::Fitting model to feature number 149, PWY.6121..5.aminoimidazole.ribonucleotide.biosynthesis.I
+2026-02-16 12:47:09.269923 INFO::Fitting model to feature number 150, PWY.6122..5.aminoimidazole.ribonucleotide.biosynthesis.II
+2026-02-16 12:47:09.271086 INFO::Fitting model to feature number 151, PWY.6123..inosine.5..phosphate.biosynthesis.I
+2026-02-16 12:47:09.272259 INFO::Fitting model to feature number 152, PWY.6124..inosine.5..phosphate.biosynthesis.II
+2026-02-16 12:47:09.273423 INFO::Fitting model to feature number 153, PWY.6125..superpathway.of.guanosine.nucleotides.de.novo.biosynthesis.II
+2026-02-16 12:47:09.274585 INFO::Fitting model to feature number 154, PWY.6126..superpathway.of.adenosine.nucleotides.de.novo.biosynthesis.II
+2026-02-16 12:47:09.275764 INFO::Fitting model to feature number 155, PWY.6143..CMP.pseudaminate.biosynthesis
+2026-02-16 12:47:09.276924 INFO::Fitting model to feature number 156, PWY.6147..6.hydroxymethyl.dihydropterin.diphosphate.biosynthesis.I
+2026-02-16 12:47:09.278086 INFO::Fitting model to feature number 157, PWY.6151..S.adenosyl.L.methionine.cycle.I
+2026-02-16 12:47:09.279246 INFO::Fitting model to feature number 158, PWY.6151..S.adenosyl.L.methionine.salvage.I
+2026-02-16 12:47:09.280432 INFO::Fitting model to feature number 159, PWY.6163..chorismate.biosynthesis.from.3.dehydroquinate
+2026-02-16 12:47:09.281587 INFO::Fitting model to feature number 160, PWY.6168..flavin.biosynthesis.III..fungi.
+2026-02-16 12:47:09.282743 INFO::Fitting model to feature number 161, PWY.621..sucrose.degradation.III..sucrose.invertase.
+2026-02-16 12:47:09.283897 INFO::Fitting model to feature number 162, PWY.6270..isoprene.biosynthesis.I
+2026-02-16 12:47:09.285064 INFO::Fitting model to feature number 163, PWY.6277..superpathway.of.5.aminoimidazole.ribonucleotide.biosynthesis
+2026-02-16 12:47:09.286224 INFO::Fitting model to feature number 164, PWY.6282..palmitoleate.biosynthesis.I..from..5Z..dodec.5.enoate.
+2026-02-16 12:47:09.287376 INFO::Fitting model to feature number 165, PWY.6284..superpathway.of.unsaturated.fatty.acids.biosynthesis..E..coli.
+2026-02-16 12:47:09.288525 INFO::Fitting model to feature number 166, PWY.6285..superpathway.of.fatty.acids.biosynthesis..E..coli.
+2026-02-16 12:47:09.289681 INFO::Fitting model to feature number 167, PWY.6292..superpathway.of.L.cysteine.biosynthesis..mammalian.
+2026-02-16 12:47:09.290822 INFO::Fitting model to feature number 168, PWY.6305..putrescine.biosynthesis.IV
+2026-02-16 12:47:09.291958 INFO::Fitting model to feature number 169, PWY.6305..superpathway.of.putrescine.biosynthesis
+2026-02-16 12:47:09.293101 INFO::Fitting model to feature number 170, PWY.6317..D.galactose.degradation.I..Leloir.pathway.
+2026-02-16 12:47:09.294274 INFO::Fitting model to feature number 171, PWY.6317..galactose.degradation.I..Leloir.pathway.
+2026-02-16 12:47:09.295401 INFO::Fitting model to feature number 172, PWY.6353..purine.nucleotides.degradation.II..aerobic.
+2026-02-16 12:47:09.296531 INFO::Fitting model to feature number 173, PWY.6385..peptidoglycan.biosynthesis.III..mycobacteria.
+2026-02-16 12:47:09.297666 INFO::Fitting model to feature number 174, PWY.6386..UDP.N.acetylmuramoyl.pentapeptide.biosynthesis.II..lysine.containing.
+2026-02-16 12:47:09.298798 INFO::Fitting model to feature number 175, PWY.6387..UDP.N.acetylmuramoyl.pentapeptide.biosynthesis.I..meso.diaminopimelate.containing.
+2026-02-16 12:47:09.299925 INFO::Fitting model to feature number 176, PWY.6470..peptidoglycan.biosynthesis.V...beta..lactam.resistance.
+2026-02-16 12:47:09.301051 INFO::Fitting model to feature number 177, PWY.6507..4.deoxy.L.threo.hex.4.enopyranuronate.degradation
+2026-02-16 12:47:09.30219 INFO::Fitting model to feature number 178, PWY.6519..8.amino.7.oxononanoate.biosynthesis.I
+2026-02-16 12:47:09.303337 INFO::Fitting model to feature number 179, PWY.6527..stachyose.degradation
+2026-02-16 12:47:09.30447 INFO::Fitting model to feature number 180, PWY.6545..pyrimidine.deoxyribonucleotides.de.novo.biosynthesis.III
+2026-02-16 12:47:09.305595 INFO::Fitting model to feature number 181, PWY.6549..L.glutamine.biosynthesis.III
+2026-02-16 12:47:09.306727 INFO::Fitting model to feature number 182, PWY.6588..pyruvate.fermentation.to.acetone
+2026-02-16 12:47:09.307877 INFO::Fitting model to feature number 183, PWY.6590..superpathway.of.Clostridium.acetobutylicum.acidogenic.fermentation
+2026-02-16 12:47:09.309043 INFO::Fitting model to feature number 184, PWY.6595..superpathway.of.guanosine.nucleotides.degradation..plants.
+2026-02-16 12:47:09.310208 INFO::Fitting model to feature number 185, PWY.6606..guanosine.nucleotides.degradation.II
+2026-02-16 12:47:09.311341 INFO::Fitting model to feature number 186, PWY.6607..guanosine.nucleotides.degradation.I
+2026-02-16 12:47:09.312485 INFO::Fitting model to feature number 187, PWY.6608..guanosine.nucleotides.degradation.III
+2026-02-16 12:47:09.313613 INFO::Fitting model to feature number 188, PWY.6609..adenine.and.adenosine.salvage.III
+2026-02-16 12:47:09.314737 INFO::Fitting model to feature number 189, PWY.6628..superpathway.of.L.phenylalanine.biosynthesis
+2026-02-16 12:47:09.315868 INFO::Fitting model to feature number 190, PWY.6629..superpathway.of.L.tryptophan.biosynthesis
+2026-02-16 12:47:09.317012 INFO::Fitting model to feature number 191, PWY.6630..superpathway.of.L.tyrosine.biosynthesis
+2026-02-16 12:47:09.318175 INFO::Fitting model to feature number 192, PWY.6700..queuosine.biosynthesis
+2026-02-16 12:47:09.319326 INFO::Fitting model to feature number 193, PWY.6700..queuosine.biosynthesis.I..de.novo.
+2026-02-16 12:47:09.320584 INFO::Fitting model to feature number 194, PWY.6703..preQ0.biosynthesis
+2026-02-16 12:47:09.321778 INFO::Fitting model to feature number 195, PWY.6731..starch.degradation.III
+2026-02-16 12:47:09.322913 INFO::Fitting model to feature number 196, PWY.6737..starch.degradation.V
+2026-02-16 12:47:09.324042 INFO::Fitting model to feature number 197, PWY.6749..CMP.legionaminate.biosynthesis.I
+2026-02-16 12:47:09.325194 INFO::Fitting model to feature number 198, PWY.6823..molybdopterin.biosynthesis
+2026-02-16 12:47:09.326317 INFO::Fitting model to feature number 199, PWY.6859..all.trans.farnesol.biosynthesis
+2026-02-16 12:47:09.327444 INFO::Fitting model to feature number 200, PWY.6891..thiazole.biosynthesis.II..Bacillus.
+2026-02-16 12:47:09.328599 INFO::Fitting model to feature number 201, PWY.6892..thiazole.biosynthesis.I..E..coli.
+2026-02-16 12:47:09.329727 INFO::Fitting model to feature number 202, PWY.6895..superpathway.of.thiamin.diphosphate.biosynthesis.II
+2026-02-16 12:47:09.330866 INFO::Fitting model to feature number 203, PWY.6897..thiamin.salvage.II
+2026-02-16 12:47:09.332013 INFO::Fitting model to feature number 204, PWY.6897..thiamine.diphosphate.salvage.II
+2026-02-16 12:47:09.333169 INFO::Fitting model to feature number 205, PWY.6901..superpathway.of.glucose.and.xylose.degradation
+2026-02-16 12:47:09.334304 INFO::Fitting model to feature number 206, PWY.6902..chitin.degradation.II..Vibrio.
+2026-02-16 12:47:09.335441 INFO::Fitting model to feature number 207, PWY.6936..seleno.amino.acid.biosynthesis
+2026-02-16 12:47:09.336581 INFO::Fitting model to feature number 208, PWY.6936..seleno.amino.acid.biosynthesis..plants.
+2026-02-16 12:47:09.33771 INFO::Fitting model to feature number 209, PWY.6969..TCA.cycle.V..2.oxoglutarate.synthase.
+2026-02-16 12:47:09.338852 INFO::Fitting model to feature number 210, PWY.702..L.methionine.biosynthesis.II
+2026-02-16 12:47:09.339981 INFO::Fitting model to feature number 211, PWY.7111..pyruvate.fermentation.to.isobutanol..engineered.
+2026-02-16 12:47:09.341127 INFO::Fitting model to feature number 212, PWY.7117..C4.photosynthetic.carbon.assimilation.cycle..PEPCK.type
+2026-02-16 12:47:09.342268 INFO::Fitting model to feature number 213, PWY.7184..pyrimidine.deoxyribonucleotides.de.novo.biosynthesis.I
+2026-02-16 12:47:09.343426 INFO::Fitting model to feature number 214, PWY.7187..pyrimidine.deoxyribonucleotides.de.novo.biosynthesis.II
+2026-02-16 12:47:09.34457 INFO::Fitting model to feature number 215, PWY.7197..pyrimidine.deoxyribonucleotide.phosphorylation
+2026-02-16 12:47:09.345715 INFO::Fitting model to feature number 216, PWY.7198..pyrimidine.deoxyribonucleotides.de.novo.biosynthesis.IV
+2026-02-16 12:47:09.346856 INFO::Fitting model to feature number 217, PWY.7199..pyrimidine.deoxyribonucleosides.salvage
+2026-02-16 12:47:09.348006 INFO::Fitting model to feature number 218, PWY.7208..superpathway.of.pyrimidine.nucleobases.salvage
+2026-02-16 12:47:09.34914 INFO::Fitting model to feature number 219, PWY.7219..adenosine.ribonucleotides.de.novo.biosynthesis
+2026-02-16 12:47:09.350286 INFO::Fitting model to feature number 220, PWY.7220..adenosine.deoxyribonucleotides.de.novo.biosynthesis.II
+2026-02-16 12:47:09.351419 INFO::Fitting model to feature number 221, PWY.7221..guanosine.ribonucleotides.de.novo.biosynthesis
+2026-02-16 12:47:09.352563 INFO::Fitting model to feature number 222, PWY.7222..guanosine.deoxyribonucleotides.de.novo.biosynthesis.II
+2026-02-16 12:47:09.353705 INFO::Fitting model to feature number 223, PWY.7228..superpathway.of.guanosine.nucleotides.de.novo.biosynthesis.I
+2026-02-16 12:47:09.354839 INFO::Fitting model to feature number 224, PWY.7229..superpathway.of.adenosine.nucleotides.de.novo.biosynthesis.I
+2026-02-16 12:47:09.355974 INFO::Fitting model to feature number 225, PWY.7234..inosine.5..phosphate.biosynthesis.III
+2026-02-16 12:47:09.357119 INFO::Fitting model to feature number 226, PWY.7237..myo...chiro..and.scillo.inositol.degradation
+2026-02-16 12:47:09.358274 INFO::Fitting model to feature number 227, PWY.7237..myo...chiro..and.scyllo.inositol.degradation
+2026-02-16 12:47:09.359407 INFO::Fitting model to feature number 228, PWY.7238..sucrose.biosynthesis.II
+2026-02-16 12:47:09.360526 INFO::Fitting model to feature number 229, PWY.7242..D.fructuronate.degradation
+2026-02-16 12:47:09.361663 INFO::Fitting model to feature number 230, PWY.724..superpathway.of.L.lysine..L.threonine.and.L.methionine.biosynthesis.II
+2026-02-16 12:47:09.362789 INFO::Fitting model to feature number 231, PWY.7282..4.amino.2.methyl.5.diphosphomethylpyrimidine.biosynthesis.II
+2026-02-16 12:47:09.363921 INFO::Fitting model to feature number 232, PWY.7282..4.amino.2.methyl.5.phosphomethylpyrimidine.biosynthesis..yeast.
+2026-02-16 12:47:09.365069 INFO::Fitting model to feature number 233, PWY.7315..dTDP.N.acetylthomosamine.biosynthesis
+2026-02-16 12:47:09.366199 INFO::Fitting model to feature number 234, PWY.7316..dTDP.N.acetylviosamine.biosynthesis
+2026-02-16 12:47:09.367357 INFO::Fitting model to feature number 235, PWY.7323..superpathway.of.GDP.mannose.derived.O.antigen.building.blocks.biosynthesis
+2026-02-16 12:47:09.368488 INFO::Fitting model to feature number 236, PWY.7328..superpathway.of.UDP.glucose.derived.O.antigen.building.blocks.biosynthesis
+2026-02-16 12:47:09.369621 INFO::Fitting model to feature number 237, PWY.7356..thiamine.diphosphate.salvage.IV..yeast.
+2026-02-16 12:47:09.370741 INFO::Fitting model to feature number 238, PWY.7357..thiamin.formation.from.pyrithiamine.and.oxythiamine..yeast.
+2026-02-16 12:47:09.371866 INFO::Fitting model to feature number 239, PWY.7357..thiamine.phosphate.formation.from.pyrithiamine.and.oxythiamine..yeast.
+2026-02-16 12:47:09.372996 INFO::Fitting model to feature number 240, PWY.7383..anaerobic.energy.metabolism..invertebrates..cytosol.
+2026-02-16 12:47:09.374136 INFO::Fitting model to feature number 241, PWY.7388..octanoyl..acyl.carrier.protein..biosynthesis..mitochondria..yeast.
+2026-02-16 12:47:09.375281 INFO::Fitting model to feature number 242, PWY.7391..isoprene.biosynthesis.II..engineered.
+2026-02-16 12:47:09.376418 INFO::Fitting model to feature number 243, PWY.7400..L.arginine.biosynthesis.IV..archaebacteria.
+2026-02-16 12:47:09.377537 INFO::Fitting model to feature number 244, PWY.7456..mannan.degradation
+2026-02-16 12:47:09.378665 INFO::Fitting model to feature number 245, PWY.7539..6.hydroxymethyl.dihydropterin.diphosphate.biosynthesis.III..Chlamydia.
+2026-02-16 12:47:09.379804 INFO::Fitting model to feature number 246, PWY.7560..methylerythritol.phosphate.pathway.II
+2026-02-16 12:47:09.380947 INFO::Fitting model to feature number 247, PWY.7663..gondoate.biosynthesis..anaerobic.
+2026-02-16 12:47:09.382074 INFO::Fitting model to feature number 248, PWY.7664..oleate.biosynthesis.IV..anaerobic.
+2026-02-16 12:47:09.383222 INFO::Fitting model to feature number 249, PWY.7761..NAD.salvage.pathway.II..PNC.IV.cycle.
+2026-02-16 12:47:09.384365 INFO::Fitting model to feature number 250, PWY.7790..UMP.biosynthesis.II
+2026-02-16 12:47:09.385496 INFO::Fitting model to feature number 251, PWY.7791..UMP.biosynthesis.III
+2026-02-16 12:47:09.386615 INFO::Fitting model to feature number 252, PWY.7851..coenzyme.A.biosynthesis.II..eukaryotic.
+2026-02-16 12:47:09.387742 INFO::Fitting model to feature number 253, PWY.7858...5Z..dodecenoate.biosynthesis.II
+2026-02-16 12:47:09.388885 INFO::Fitting model to feature number 254, PWY.7953..UDP.N.acetylmuramoyl.pentapeptide.biosynthesis.III..meso.diaminopimelate.containing.
+2026-02-16 12:47:09.390013 INFO::Fitting model to feature number 255, PWY.7977..L.methionine.biosynthesis.IV
+2026-02-16 12:47:09.391211 INFO::Fitting model to feature number 256, PWY.8004..Entner.Doudoroff.pathway.I
+2026-02-16 12:47:09.392338 INFO::Fitting model to feature number 257, PWY.8178..pentose.phosphate.pathway..non.oxidative.branch..II
+2026-02-16 12:47:09.393487 INFO::Fitting model to feature number 258, PWY.8187..L.arginine.degradation.XIII..reductive.Stickland.reaction.
+2026-02-16 12:47:09.394627 INFO::Fitting model to feature number 259, PWY.821..superpathway.of.sulfur.amino.acid.biosynthesis..Saccharomyces.cerevisiae.
+2026-02-16 12:47:09.395752 INFO::Fitting model to feature number 260, PWY.841..superpathway.of.purine.nucleotides.de.novo.biosynthesis.I
+2026-02-16 12:47:09.397189 INFO::Fitting model to feature number 261, PWY.922..mevalonate.pathway.I..eukaryotes.and.bacteria.
+2026-02-16 12:47:09.398813 INFO::Fitting model to feature number 262, PWY.I9..L.cysteine.biosynthesis.VI..from.L.methionine.
+2026-02-16 12:47:09.400304 INFO::Fitting model to feature number 263, PWY0.1061..superpathway.of.L.alanine.biosynthesis
+2026-02-16 12:47:09.401786 INFO::Fitting model to feature number 264, PWY0.1241..ADP.L.glycero..beta..D.manno.heptose.biosynthesis
+2026-02-16 12:47:09.403297 INFO::Fitting model to feature number 265, PWY0.1261..anhydromuropeptides.recycling
+2026-02-16 12:47:09.404782 INFO::Fitting model to feature number 266, PWY0.1296..purine.ribonucleosides.degradation
+2026-02-16 12:47:09.406271 INFO::Fitting model to feature number 267, PWY0.1297..superpathway.of.purine.deoxyribonucleosides.degradation
+2026-02-16 12:47:09.40772 INFO::Fitting model to feature number 268, PWY0.1298..superpathway.of.pyrimidine.deoxyribonucleosides.degradation
+2026-02-16 12:47:09.40918 INFO::Fitting model to feature number 269, PWY0.1319..CDP.diacylglycerol.biosynthesis.II
+2026-02-16 12:47:09.410691 INFO::Fitting model to feature number 270, PWY0.1477..ethanolamine.utilization
+2026-02-16 12:47:09.412149 INFO::Fitting model to feature number 271, PWY0.1479..tRNA.processing
+2026-02-16 12:47:09.413584 INFO::Fitting model to feature number 272, PWY0.1586..peptidoglycan.maturation..meso.diaminopimelate.containing.
+2026-02-16 12:47:09.415036 INFO::Fitting model to feature number 273, PWY0.162..superpathway.of.pyrimidine.ribonucleotides.de.novo.biosynthesis
+2026-02-16 12:47:09.416501 INFO::Fitting model to feature number 274, PWY0.166..superpathway.of.pyrimidine.deoxyribonucleotides.de.novo.biosynthesis..E..coli.
+2026-02-16 12:47:09.417943 INFO::Fitting model to feature number 275, PWY0.301..L.ascorbate.degradation.I..bacterial..anaerobic.
+2026-02-16 12:47:09.419396 INFO::Fitting model to feature number 276, PWY0.781..aspartate.superpathway
+2026-02-16 12:47:09.420854 INFO::Fitting model to feature number 277, PWY0.845..superpathway.of.pyridoxal.5..phosphate.biosynthesis.and.salvage
+2026-02-16 12:47:09.422434 INFO::Fitting model to feature number 278, PWY0.862...5Z..dodec.5.enoate.biosynthesis
+2026-02-16 12:47:09.423891 INFO::Fitting model to feature number 279, PWY0.862...5Z..dodecenoate.biosynthesis.I
+2026-02-16 12:47:09.425355 INFO::Fitting model to feature number 280, PWY1ZNC.1..assimilatory.sulfate.reduction.IV
+2026-02-16 12:47:09.426815 INFO::Fitting model to feature number 281, PWY4FS.7..phosphatidylglycerol.biosynthesis.I..plastidic.
+2026-02-16 12:47:09.428281 INFO::Fitting model to feature number 282, PWY4FS.8..phosphatidylglycerol.biosynthesis.II..non.plastidic.
+2026-02-16 12:47:09.429721 INFO::Fitting model to feature number 283, PWY4LZ.257..superpathway.of.fermentation..Chlamydomonas.reinhardtii.
+2026-02-16 12:47:09.785084 INFO::Fitting model to feature number 284, PWY66.389..phytol.degradation
+2026-02-16 12:47:09.788527 INFO::Fitting model to feature number 285, PWY66.399..gluconeogenesis.III
+2026-02-16 12:47:09.789916 INFO::Fitting model to feature number 286, PWY66.400..glycolysis.VI..metazoan.
+2026-02-16 12:47:09.791185 INFO::Fitting model to feature number 287, PWY66.409..superpathway.of.purine.nucleotide.salvage
+2026-02-16 12:47:09.792393 INFO::Fitting model to feature number 288, PWY66.422..D.galactose.degradation.V..Leloir.pathway.
+2026-02-16 12:47:09.793553 INFO::Fitting model to feature number 289, PWY66.429..fatty.acid.biosynthesis.initiation..mitochondria.
+2026-02-16 12:47:09.794701 INFO::Fitting model to feature number 290, PWYG.321..mycolate.biosynthesis
+2026-02-16 12:47:09.795842 INFO::Fitting model to feature number 291, PYRIDNUCSYN.PWY..NAD.biosynthesis.I..from.aspartate.
+2026-02-16 12:47:09.796962 INFO::Fitting model to feature number 292, PYRIDNUCSYN.PWY..NAD.de.novo.biosynthesis.I..from.aspartate.
+2026-02-16 12:47:09.798073 INFO::Fitting model to feature number 293, PYRIDOXSYN.PWY..pyridoxal.5..phosphate.biosynthesis.I
+2026-02-16 12:47:09.799185 INFO::Fitting model to feature number 294, RHAMCAT.PWY..L.rhamnose.degradation.I
+2026-02-16 12:47:09.800306 INFO::Fitting model to feature number 295, RIBOSYN2.PWY..flavin.biosynthesis.I..bacteria.and.plants.
+2026-02-16 12:47:09.801421 INFO::Fitting model to feature number 296, SALVADEHYPOX.PWY..adenosine.nucleotides.degradation.II
+2026-02-16 12:47:09.802526 INFO::Fitting model to feature number 297, SER.GLYSYN.PWY..superpathway.of.L.serine.and.glycine.biosynthesis.I
+2026-02-16 12:47:09.803636 INFO::Fitting model to feature number 298, SO4ASSIM.PWY..assimilatory.sulfate.reduction.I
+2026-02-16 12:47:09.804746 INFO::Fitting model to feature number 299, SO4ASSIM.PWY..sulfate.reduction.I..assimilatory.
+2026-02-16 12:47:09.805853 INFO::Fitting model to feature number 300, SULFATE.CYS.PWY..superpathway.of.sulfate.assimilation.and.cysteine.biosynthesis
+2026-02-16 12:47:09.806962 INFO::Fitting model to feature number 301, TCA..TCA.cycle.I..prokaryotic.
+2026-02-16 12:47:09.80806 INFO::Fitting model to feature number 302, TEICHOICACID.PWY..teichoic.acid..poly.glycerol..biosynthesis
+2026-02-16 12:47:09.809173 INFO::Fitting model to feature number 303, THISYN.PWY..superpathway.of.thiamin.diphosphate.biosynthesis.I
+2026-02-16 12:47:09.810269 INFO::Fitting model to feature number 304, THISYNARA.PWY..superpathway.of.thiamin.diphosphate.biosynthesis.III..eukaryotes.
+2026-02-16 12:47:09.81135 INFO::Fitting model to feature number 305, THISYNARA.PWY..superpathway.of.thiamine.diphosphate.biosynthesis.III..eukaryotes.
+2026-02-16 12:47:09.812434 INFO::Fitting model to feature number 306, THRESYN.PWY..superpathway.of.L.threonine.biosynthesis
+2026-02-16 12:47:09.813525 INFO::Fitting model to feature number 307, TRNA.CHARGING.PWY..tRNA.charging
+2026-02-16 12:47:09.814605 INFO::Fitting model to feature number 308, TRPSYN.PWY..L.tryptophan.biosynthesis
+2026-02-16 12:47:09.815686 INFO::Fitting model to feature number 309, UDPNAGSYN.PWY..UDP.N.acetyl.D.glucosamine.biosynthesis.I
+2026-02-16 12:47:09.816763 INFO::Fitting model to feature number 310, VALSYN.PWY..L.valine.biosynthesis
+2026-02-16 12:47:09.839331 INFO::Counting total values for each feature
+2026-02-16 12:47:09.852982 INFO::Writing filtered data to file MaAsLin2_DY_vs_DO_BatchCorrected/features/filtered_data.tsv
+2026-02-16 12:47:09.857495 INFO::Writing filtered, normalized data to file MaAsLin2_DY_vs_DO_BatchCorrected/features/filtered_data_norm.tsv
+2026-02-16 12:47:09.861888 INFO::Writing filtered, normalized, transformed data to file MaAsLin2_DY_vs_DO_BatchCorrected/features/filtered_data_norm_transformed.tsv
+2026-02-16 12:47:09.867182 INFO::Writing residuals to file MaAsLin2_DY_vs_DO_BatchCorrected/fits/residuals.rds
+2026-02-16 12:47:09.869473 INFO::Writing fitted values to file MaAsLin2_DY_vs_DO_BatchCorrected/fits/fitted.rds
+2026-02-16 12:47:09.870646 INFO::Writing all results to file (ordered by increasing q-values): MaAsLin2_DY_vs_DO_BatchCorrected/all_results.tsv
+2026-02-16 12:47:09.873688 INFO::Writing the significant results (those which are less than or equal to the threshold of 0.250000 ) to file (ordered by increasing q-values): MaAsLin2_DY_vs_DO_BatchCorrected/significant_results.tsv
+2026-02-16 12:47:09.87535 INFO::Writing heatmap of significant results to file: MaAsLin2_DY_vs_DO_BatchCorrected/heatmap.pdf
+2026-02-16 12:47:09.951857 INFO::Writing association plots (one for each significant association) to output folder: MaAsLin2_DY_vs_DO_BatchCorrected
+2026-02-16 12:47:09.954613 INFO::Plotting associations from most to least significant, grouped by metadata
+2026-02-16 12:47:09.954985 INFO::Plotting data for metadata number 1, Experiment
+2026-02-16 12:47:09.955644 INFO::Creating boxplot for categorical data, Experiment vs NONMEVIPP.PWY..methylerythritol.phosphate.pathway.I
+2026-02-16 12:47:10.137434 INFO::Creating boxplot for categorical data, Experiment vs DENOVOPURINE2.PWY..superpathway.of.purine.nucleotides.de.novo.biosynthesis.II
+2026-02-16 12:47:10.261837 INFO::Creating boxplot for categorical data, Experiment vs PWY.5154..L.arginine.biosynthesis.III..via.N.acetyl.L.citrulline.
+2026-02-16 12:47:10.363714 INFO::Creating boxplot for categorical data, Experiment vs DENOVOPURINE2.PWY..superpathway.of.purine.nucleotides.de.novo.biosynthesis.II
+2026-02-16 12:47:10.465237 INFO::Creating boxplot for categorical data, Experiment vs PWY.5154..L.arginine.biosynthesis.III..via.N.acetyl.L.citrulline.
+2026-02-16 12:47:10.572955 INFO::Creating boxplot for categorical data, Experiment vs PHOSLIPSYN.PWY..superpathway.of.phospholipid.biosynthesis.I..bacteria.
+2026-02-16 12:47:10.674226 INFO::Creating boxplot for categorical data, Experiment vs PWY66.429..fatty.acid.biosynthesis.initiation..mitochondria.
+2026-02-16 12:47:10.780484 INFO::Creating boxplot for categorical data, Experiment vs PWY.7184..pyrimidine.deoxyribonucleotides.de.novo.biosynthesis.I
+2026-02-16 12:47:10.881185 INFO::Creating boxplot for categorical data, Experiment vs PWY.6545..pyrimidine.deoxyribonucleotides.de.novo.biosynthesis.III
+2026-02-16 12:47:10.982792 INFO::Creating boxplot for categorical data, Experiment vs PWY.6151..S.adenosyl.L.methionine.cycle.I
+2026-02-16 12:47:11.092772 INFO::Creating boxplot for categorical data, Experiment vs PHOSLIPSYN.PWY..superpathway.of.phospholipid.biosynthesis.I..bacteria.
+2026-02-16 12:47:11.194118 INFO::Creating boxplot for categorical data, Experiment vs PWY.7187..pyrimidine.deoxyribonucleotides.de.novo.biosynthesis.II
+2026-02-16 12:47:11.297452 INFO::Creating boxplot for categorical data, Experiment vs PWY0.166..superpathway.of.pyrimidine.deoxyribonucleotides.de.novo.biosynthesis..E..coli.
+2026-02-16 12:47:11.404019 INFO::Creating boxplot for categorical data, Experiment vs PWY.7184..pyrimidine.deoxyribonucleotides.de.novo.biosynthesis.I
+2026-02-16 12:47:11.506818 INFO::Creating boxplot for categorical data, Experiment vs PWY.5686..UMP.biosynthesis
+2026-02-16 12:47:11.615825 INFO::Creating boxplot for categorical data, Experiment vs PWY.6545..pyrimidine.deoxyribonucleotides.de.novo.biosynthesis.III
+2026-02-16 12:47:11.716721 INFO::Creating boxplot for categorical data, Experiment vs PWY.6317..D.galactose.degradation.I..Leloir.pathway.
+2026-02-16 12:47:11.817365 INFO::Creating boxplot for categorical data, Experiment vs PWY.7187..pyrimidine.deoxyribonucleotides.de.novo.biosynthesis.II
+2026-02-16 12:47:11.924168 INFO::Creating boxplot for categorical data, Experiment vs X1CMET2.PWY..N10.formyl.tetrahydrofolate.biosynthesis
+2026-02-16 12:47:12.024624 INFO::Creating boxplot for categorical data, Experiment vs THISYNARA.PWY..superpathway.of.thiamin.diphosphate.biosynthesis.III..eukaryotes.
+2026-02-16 12:47:12.131818 INFO::Creating boxplot for categorical data, Experiment vs PWY0.166..superpathway.of.pyrimidine.deoxyribonucleotides.de.novo.biosynthesis..E..coli.
+2026-02-16 12:47:12.233332 INFO::Creating boxplot for categorical data, Experiment vs DTDPRHAMSYN.PWY..dTDP.L.rhamnose.biosynthesis.I
+2026-02-16 12:47:12.334838 INFO::Creating boxplot for categorical data, Experiment vs PWY0.1261..anhydromuropeptides.recycling
+2026-02-16 12:47:12.440915 INFO::Creating boxplot for categorical data, Experiment vs PWY.8178..pentose.phosphate.pathway..non.oxidative.branch..II
+2026-02-16 12:47:12.542151 INFO::Creating boxplot for categorical data, Experiment vs PWY.3841..folate.transformations.II
+2026-02-16 12:47:12.669446 INFO::Creating boxplot for categorical data, Experiment vs PWY.5981..CDP.diacylglycerol.biosynthesis.III
+2026-02-16 12:47:12.779356 INFO::Creating boxplot for categorical data, Experiment vs COA.PWY.1..superpathway.of.coenzyme.A.biosynthesis.III..mammals.
+2026-02-16 12:47:12.882312 INFO::Creating boxplot for categorical data, Experiment vs PWY.6700..queuosine.biosynthesis
+2026-02-16 12:47:12.99562 INFO::Creating boxplot for categorical data, Experiment vs PANTOSYN.PWY..pantothenate.and.coenzyme.A.biosynthesis.I
+2026-02-16 12:47:13.096711 INFO::Creating boxplot for categorical data, Experiment vs PWY.7219..adenosine.ribonucleotides.de.novo.biosynthesis
+2026-02-16 12:47:13.203801 INFO::Creating boxplot for categorical data, Experiment vs PWY.7851..coenzyme.A.biosynthesis.II..eukaryotic.
+2026-02-16 12:47:13.304802 INFO::Creating boxplot for categorical data, Experiment vs DTDPRHAMSYN.PWY..dTDP..beta..L.rhamnose.biosynthesis
+2026-02-16 12:47:13.405498 INFO::Creating boxplot for categorical data, Experiment vs NONOXIPENT.PWY..pentose.phosphate.pathway..non.oxidative.branch..I
+2026-02-16 12:47:13.51145 INFO::Creating boxplot for categorical data, Experiment vs PWY0.1261..anhydromuropeptides.recycling
+2026-02-16 12:47:13.612232 INFO::Creating boxplot for categorical data, Experiment vs PWY66.422..D.galactose.degradation.V..Leloir.pathway.
+2026-02-16 12:47:13.719415 INFO::Creating boxplot for categorical data, Experiment vs PWY.1042..glycolysis.IV..plant.cytosol.
+2026-02-16 12:47:13.819712 INFO::Creating boxplot for categorical data, Experiment vs COA.PWY.1..coenzyme.A.biosynthesis.II..mammalian.
+2026-02-16 12:47:13.920369 INFO::Creating boxplot for categorical data, Experiment vs PWY.1042..glycolysis.IV
+2026-02-16 12:47:14.026739 INFO::Creating boxplot for categorical data, Experiment vs PYRIDNUCSYN.PWY..NAD.biosynthesis.I..from.aspartate.
+2026-02-16 12:47:14.127813 INFO::Creating boxplot for categorical data, Experiment vs PWY.3841..folate.transformations.II..plants.
+2026-02-16 12:47:14.236974 INFO::Creating boxplot for categorical data, Experiment vs PWY.6317..galactose.degradation.I..Leloir.pathway.
+2026-02-16 12:47:14.338493 INFO::Creating boxplot for categorical data, Experiment vs PYRIDNUCSYN.PWY..NAD.de.novo.biosynthesis.I..from.aspartate.
+2026-02-16 12:47:14.440482 INFO::Creating boxplot for categorical data, Experiment vs PWY.5686..UMP.biosynthesis.I
+2026-02-16 12:47:14.548041 INFO::Creating boxplot for categorical data, Experiment vs PWY.7790..UMP.biosynthesis.II
+2026-02-16 12:47:14.652062 INFO::Creating boxplot for categorical data, Experiment vs PWY.7791..UMP.biosynthesis.III
+2026-02-16 12:47:14.760607 INFO::Creating boxplot for categorical data, Experiment vs COA.PWY..coenzyme.A.biosynthesis.I
+2026-02-16 12:47:14.866989 INFO::Creating boxplot for categorical data, Experiment vs PWY4FS.7..phosphatidylglycerol.biosynthesis.I..plastidic.
+2026-02-16 12:47:14.973167 INFO::Creating boxplot for categorical data, Experiment vs PWY4FS.8..phosphatidylglycerol.biosynthesis.II..non.plastidic.
+2026-02-16 12:47:15.083171 INFO::Creating boxplot for categorical data, Experiment vs PWY.7539..6.hydroxymethyl.dihydropterin.diphosphate.biosynthesis.III..Chlamydia.
+2026-02-16 12:47:15.188212 INFO::Creating boxplot for categorical data, Experiment vs PWY.6737..starch.degradation.V
+2026-02-16 12:47:15.306426 INFO::Creating boxplot for categorical data, Experiment vs PWY.7953..UDP.N.acetylmuramoyl.pentapeptide.biosynthesis.III..meso.diaminopimelate.containing.
+2026-02-16 12:47:15.41389 INFO::Creating boxplot for categorical data, Experiment vs PWY.5941..glycogen.degradation.II
+2026-02-16 12:47:15.599821 INFO::Creating boxplot for categorical data, Experiment vs PWY.7400..L.arginine.biosynthesis.IV..archaebacteria.
+2026-02-16 12:47:15.711674 INFO::Creating boxplot for categorical data, Experiment vs BRANCHED.CHAIN.AA.SYN.PWY..superpathway.of.branched.amino.acid.biosynthesis
+2026-02-16 12:47:15.818223 INFO::Creating boxplot for categorical data, Experiment vs TEICHOICACID.PWY..teichoic.acid..poly.glycerol..biosynthesis
+2026-02-16 12:47:15.937939 INFO::Creating boxplot for categorical data, Experiment vs PWY.7282..4.amino.2.methyl.5.diphosphomethylpyrimidine.biosynthesis.II
+2026-02-16 12:47:16.043805 INFO::Creating boxplot for categorical data, Experiment vs PWY.5347..superpathway.of.L.methionine.biosynthesis..transsulfuration.
+2026-02-16 12:47:16.149765 INFO::Creating boxplot for categorical data, Experiment vs GLUTORN.PWY..L.ornithine.biosynthesis
+2026-02-16 12:47:16.271049 INFO::Creating boxplot for categorical data, Experiment vs ARGININE.SYN4.PWY..L.ornithine.de.novo..biosynthesis
+2026-02-16 12:47:16.376508 INFO::Creating boxplot for categorical data, Experiment vs PWY.6892..thiazole.biosynthesis.I..E..coli.
+2026-02-16 12:47:16.49496 INFO::Creating boxplot for categorical data, Experiment vs PWY.4242..pantothenate.and.coenzyme.A.biosynthesis.III
+2026-02-16 12:47:16.602113 INFO::Creating boxplot for categorical data, Experiment vs PWY.6151..S.adenosyl.L.methionine.salvage.I
+2026-02-16 12:47:16.710212 INFO::Creating boxplot for categorical data, Experiment vs PWY4FS.7..phosphatidylglycerol.biosynthesis.I..plastidic.
+2026-02-16 12:47:16.83238 INFO::Creating boxplot for categorical data, Experiment vs PWY4FS.8..phosphatidylglycerol.biosynthesis.II..non.plastidic.
+2026-02-16 12:47:16.938226 INFO::Creating boxplot for categorical data, Experiment vs GLUTORN.PWY..L.ornithine.biosynthesis.I
+2026-02-16 12:47:17.05233 INFO::Creating boxplot for categorical data, Experiment vs PWY.7539..6.hydroxymethyl.dihydropterin.diphosphate.biosynthesis.III..Chlamydia.
+2026-02-16 12:47:17.164495 INFO::Creating boxplot for categorical data, Experiment vs COA.PWY..coenzyme.A.biosynthesis.I..prokaryotic.
+2026-02-16 12:47:17.270396 INFO::Creating boxplot for categorical data, Experiment vs PWY.5265..peptidoglycan.biosynthesis.II..staphylococci.
+2026-02-16 12:47:17.389931 INFO::Creating boxplot for categorical data, Experiment vs TEICHOICACID.PWY..teichoic.acid..poly.glycerol..biosynthesis
+2026-02-16 12:47:17.495338 INFO::Creating boxplot for categorical data, Experiment vs PWY.7456..mannan.degradation
+2026-02-16 12:47:17.601865 INFO::Creating boxplot for categorical data, Experiment vs PWY.4981..L.proline.biosynthesis.II..from.arginine.
+2026-02-16 12:47:17.723693 INFO::Creating boxplot for categorical data, Experiment vs BRANCHED.CHAIN.AA.SYN.PWY..superpathway.of.branched.chain.amino.acid.biosynthesis
+2026-02-16 12:47:17.828545 INFO::Creating boxplot for categorical data, Experiment vs P41.PWY..pyruvate.fermentation.to.acetate.and..S..lactate.I
+2026-02-16 12:47:17.948329 INFO::Creating boxplot for categorical data, Experiment vs PWY.5695..urate.biosynthesis.inosine.5..phosphate.degradation
+2026-02-16 12:47:18.053782 INFO::Creating boxplot for categorical data, Experiment vs PWY.5347..superpathway.of.L.methionine.biosynthesis..transsulfuration.
+2026-02-16 12:47:18.164677 INFO::Creating boxplot for categorical data, Experiment vs PWY.7238..sucrose.biosynthesis.II
+2026-02-16 12:47:18.289495 INFO::Creating boxplot for categorical data, Experiment vs PWY66.400..glycolysis.VI..metazoan.
+2026-02-16 12:47:18.395398 INFO::Creating boxplot for categorical data, Experiment vs ARGININE.SYN4.PWY..L.ornithine.de.novo..biosynthesis
+2026-02-16 12:47:18.516165 INFO::Creating boxplot for categorical data, Experiment vs PWY.5030..L.histidine.degradation.III
+2026-02-16 12:47:18.625337 INFO::Creating boxplot for categorical data, Experiment vs PANTOSYN.PWY..superpathway.of.coenzyme.A.biosynthesis.I..bacteria.
+2026-02-16 12:47:18.734558 INFO::Creating boxplot for categorical data, Experiment vs HISDEG.PWY..L.histidine.degradation.I
+2026-02-16 12:47:18.862909 INFO::Creating boxplot for categorical data, Experiment vs PWY.7456..mannan.degradation
+2026-02-16 12:47:18.974517 INFO::Creating boxplot for categorical data, Experiment vs PWY.6700..queuosine.biosynthesis.I..de.novo.
+2026-02-16 12:47:19.094382 INFO::Creating boxplot for categorical data, Experiment vs PWY.7237..myo...chiro..and.scyllo.inositol.degradation
+2026-02-16 12:47:19.199077 INFO::Creating boxplot for categorical data, Experiment vs TRPSYN.PWY..L.tryptophan.biosynthesis
+2026-02-16 12:47:19.306272 INFO::Creating boxplot for categorical data, Experiment vs NAGLIPASYN.PWY..lipid.IVA.biosynthesis
+2026-02-16 12:47:19.423089 INFO::Creating boxplot for categorical data, Experiment vs X1CMET2.PWY..folate.transformations.III..E..coli.
+2026-02-16 12:47:19.529016 INFO::Creating boxplot for categorical data, Experiment vs PWY.1269..CMP.3.deoxy.D.manno.octulosonate.biosynthesis.I
+2026-02-16 12:47:19.649168 INFO::Creating boxplot for categorical data, Experiment vs PWY.5030..L.histidine.degradation.III
+2026-02-16 12:47:19.754188 INFO::Creating boxplot for categorical data, Experiment vs PWY.6168..flavin.biosynthesis.III..fungi.
+2026-02-16 12:47:19.872655 INFO::Creating boxplot for categorical data, Experiment vs THISYNARA.PWY..superpathway.of.thiamine.diphosphate.biosynthesis.III..eukaryotes.
+2026-02-16 12:47:19.979299 INFO::Creating boxplot for categorical data, Experiment vs THISYN.PWY..superpathway.of.thiamin.diphosphate.biosynthesis.I
+2026-02-16 12:47:20.084143 INFO::Creating boxplot for categorical data, Experiment vs PWY.5695..inosine.5..phosphate.degradation
+2026-02-16 12:47:20.202292 INFO::Creating boxplot for categorical data, Experiment vs NAGLIPASYN.PWY..lipid.IVA.biosynthesis
+2026-02-16 12:47:20.30659 INFO::Creating boxplot for categorical data, Experiment vs PWY.6823..molybdopterin.biosynthesis
+2026-02-16 12:47:20.425944 INFO::Creating boxplot for categorical data, Experiment vs NONOXIPENT.PWY..pentose.phosphate.pathway..non.oxidative.branch.
+2026-02-16 12:47:20.53113 INFO::Creating boxplot for categorical data, Experiment vs PWY.5104..L.isoleucine.biosynthesis.IV
+2026-02-16 12:47:20.637468 INFO::Creating boxplot for categorical data, Experiment vs PWY.7977..L.methionine.biosynthesis.IV
+2026-02-16 12:47:20.755712 INFO::Creating boxplot for categorical data, Experiment vs PWY.6897..thiamin.salvage.II
+2026-02-16 12:47:20.860695 INFO::Creating boxplot for categorical data, Experiment vs PWY.6270..isoprene.biosynthesis.I
+2026-02-16 12:47:20.980227 INFO::Creating boxplot for categorical data, Experiment vs PWY.7560..methylerythritol.phosphate.pathway.II
+2026-02-16 12:47:21.084692 INFO::Creating boxplot for categorical data, Experiment vs PWY.7234..inosine.5..phosphate.biosynthesis.III
+2026-02-16 12:47:21.202974 INFO::Creating boxplot for categorical data, Experiment vs PWY.I9..L.cysteine.biosynthesis.VI..from.L.methionine.
+2026-02-16 12:47:21.310972 INFO::Creating boxplot for categorical data, Experiment vs PWY.7357..thiamine.phosphate.formation.from.pyrithiamine.and.oxythiamine..yeast.
+2026-02-16 12:47:21.417289 INFO::Creating boxplot for categorical data, Experiment vs PWY.7357..thiamin.formation.from.pyrithiamine.and.oxythiamine..yeast.
+2026-02-16 12:47:21.571642 INFO::Creating boxplot for categorical data, Experiment vs PWY.7237..myo...chiro..and.scillo.inositol.degradation
+2026-02-16 12:47:21.681539 INFO::Creating boxplot for categorical data, Experiment vs GLYCOLYSIS.E.D..superpathway.of.glycolysis.and.Entner.Doudoroff
+2026-02-16 12:47:21.806511 INFO::Creating boxplot for categorical data, Experiment vs PWY.6897..thiamine.diphosphate.salvage.II
+2026-02-16 12:47:21.918842 INFO::Creating boxplot for categorical data, Experiment vs RIBOSYN2.PWY..flavin.biosynthesis.I..bacteria.and.plants.
+2026-02-16 12:47:22.028469 INFO::Creating boxplot for categorical data, Experiment vs PWY0.1241..ADP.L.glycero..beta..D.manno.heptose.biosynthesis
+2026-02-16 12:47:22.154821 INFO::Creating boxplot for categorical data, Experiment vs GLYCOLYSIS.E.D..superpathway.of.glycolysis.and.Entner.Doudoroff
+2026-02-16 12:47:22.268169 INFO::Creating boxplot for categorical data, Experiment vs PWY0.1479..tRNA.processing
+2026-02-16 12:47:22.376549 INFO::Creating boxplot for categorical data, Experiment vs PWY.8187..L.arginine.degradation.XIII..reductive.Stickland.reaction.
+2026-02-16 12:47:22.503112 INFO::Creating boxplot for categorical data, Experiment vs PWY.5941..glycogen.degradation.II..eukaryotic.
+2026-02-16 12:47:22.61308 INFO::Creating boxplot for categorical data, Experiment vs THISYNARA.PWY..superpathway.of.thiamin.diphosphate.biosynthesis.III..eukaryotes.
+2026-02-16 12:47:22.738688 INFO::Creating boxplot for categorical data, Experiment vs PWY66.409..superpathway.of.purine.nucleotide.salvage
+2026-02-16 12:47:22.847725 INFO::Creating boxplot for categorical data, Experiment vs PWY.6124..inosine.5..phosphate.biosynthesis.II
+2026-02-16 12:47:22.955919 INFO::Creating boxplot for categorical data, Experiment vs PWY.6123..inosine.5..phosphate.biosynthesis.I
+2026-02-16 12:47:23.082667 INFO::Creating boxplot for categorical data, Experiment vs PWY.6749..CMP.legionaminate.biosynthesis.I
+2026-02-16 12:47:23.191454 INFO::Creating boxplot for categorical data, Experiment vs PWY0.1479..tRNA.processing
+2026-02-16 12:47:23.321467 INFO::Creating boxplot for categorical data, Experiment vs PWY.5941..glycogen.degradation.II..eukaryotic.
+2026-02-16 12:47:23.43149 INFO::Creating boxplot for categorical data, Experiment vs PWY.5121..superpathway.of.geranylgeranyl.diphosphate.biosynthesis.II..via.MEP.
+2026-02-16 12:47:23.540024 INFO::Creating boxplot for categorical data, Experiment vs GLUCUROCAT.PWY..superpathway.of..beta..D.glucuronide.and.D.glucuronate.degradation
+2026-02-16 12:47:23.666806 INFO::Creating boxplot for categorical data, Experiment vs PWY.6292..superpathway.of.L.cysteine.biosynthesis..mammalian.
+2026-02-16 12:47:23.775915 INFO::Creating boxplot for categorical data, Experiment vs GLYCOGENSYNTH.PWY..glycogen.biosynthesis.I..from.ADP.D.Glucose.
+2026-02-16 12:47:23.902688 INFO::Creating boxplot for categorical data, Experiment vs PWYG.321..mycolate.biosynthesis
+2026-02-16 12:47:24.011612 INFO::Creating boxplot for categorical data, Experiment vs GLUCUROCAT.PWY..superpathway.of..beta..D.glucuronosides.degradation
+2026-02-16 12:47:24.120226 INFO::Creating boxplot for categorical data, Experiment vs PWY0.862...5Z..dodec.5.enoate.biosynthesis
+2026-02-16 12:47:24.248528 INFO::Creating boxplot for categorical data, Experiment vs FASYN.INITIAL.PWY..superpathway.of.fatty.acid.biosynthesis.initiation..E..coli.
+2026-02-16 12:47:24.359076 INFO::Creating boxplot for categorical data, Experiment vs PWY.6630..superpathway.of.L.tyrosine.biosynthesis
+2026-02-16 12:47:24.486387 INFO::Creating boxplot for categorical data, Experiment vs PWY.6902..chitin.degradation.II..Vibrio.
+2026-02-16 12:47:24.596637 INFO::Creating boxplot for categorical data, Experiment vs PWY.7208..superpathway.of.pyrimidine.nucleobases.salvage
+2026-02-16 12:47:24.706934 INFO::Creating boxplot for categorical data, Experiment vs PWY.6628..superpathway.of.L.phenylalanine.biosynthesis
+2026-02-16 12:47:24.835344 INFO::Creating boxplot for categorical data, Experiment vs PWY.5367..petroselinate.biosynthesis
+2026-02-16 12:47:24.944472 INFO::Creating boxplot for categorical data, Experiment vs PWY.6125..superpathway.of.guanosine.nucleotides.de.novo.biosynthesis.II
+2026-02-16 12:47:25.071434 INFO::Creating boxplot for categorical data, Experiment vs PWY.6284..superpathway.of.unsaturated.fatty.acids.biosynthesis..E..coli.
+2026-02-16 12:47:25.180527 INFO::Creating boxplot for categorical data, Experiment vs PWY.6936..seleno.amino.acid.biosynthesis..plants.
+2026-02-16 12:47:25.289435 INFO::Creating boxplot for categorical data, Experiment vs PWY0.1297..superpathway.of.purine.deoxyribonucleosides.degradation
+2026-02-16 12:47:25.41846 INFO::Creating boxplot for categorical data, Experiment vs PWY.7356..thiamine.diphosphate.salvage.IV..yeast.
+2026-02-16 12:47:25.528474 INFO::Creating boxplot for categorical data, Experiment vs PWY.7761..NAD.salvage.pathway.II..PNC.IV.cycle.
+2026-02-16 12:47:25.656157 INFO::Creating boxplot for categorical data, Experiment vs PWY.6859..all.trans.farnesol.biosynthesis
+2026-02-16 12:47:25.766072 INFO::Creating boxplot for categorical data, Experiment vs COMPLETE.ARO.PWY..superpathway.of.aromatic.amino.acid.biosynthesis
+2026-02-16 12:47:25.878803 INFO::Creating boxplot for categorical data, Experiment vs PWY.6749..CMP.legionaminate.biosynthesis.I
+2026-02-16 12:47:26.012878 INFO::Creating boxplot for categorical data, Experiment vs POLYISOPRENSYN.PWY..polyisoprenoid.biosynthesis..E..coli.
+2026-02-16 12:47:26.132003 INFO::Creating boxplot for categorical data, Experiment vs PWY.922..mevalonate.pathway.I..eukaryotes.and.bacteria.
+2026-02-16 12:47:26.26521 INFO::Creating boxplot for categorical data, Experiment vs METSYN.PWY..L.homoserine.and.L.methionine.biosynthesis
+2026-02-16 12:47:26.384251 INFO::Creating boxplot for categorical data, Experiment vs HOMOSER.METSYN.PWY..L.methionine.biosynthesis.I
+2026-02-16 12:47:26.508839 INFO::Creating boxplot for categorical data, Experiment vs PWY.7228..superpathway.of.guanosine.nucleotides.de.novo.biosynthesis.I
+2026-02-16 12:47:26.624161 INFO::Creating boxplot for categorical data, Experiment vs PWY.5910..superpathway.of.geranylgeranyldiphosphate.biosynthesis.I..via.mevalonate.
+2026-02-16 12:47:26.732825 INFO::Creating boxplot for categorical data, Experiment vs PWY.7391..isoprene.biosynthesis.II..engineered.
+2026-02-16 12:47:26.867897 INFO::Creating boxplot for categorical data, Experiment vs PWY.5384..sucrose.degradation.IV..sucrose.phosphorylase.
+2026-02-16 12:47:26.978332 INFO::Creating boxplot for categorical data, Experiment vs PWY.702..L.methionine.biosynthesis.II
+2026-02-16 12:47:27.106016 INFO::Creating boxplot for categorical data, Experiment vs PWY0.1477..ethanolamine.utilization
+2026-02-16 12:47:27.216212 INFO::Creating boxplot for categorical data, Experiment vs PWY.5913..TCA.cycle.VI..obligate.autotrophs.
+2026-02-16 12:47:27.335036 INFO::Creating boxplot for categorical data, Experiment vs PWY.7858...5Z..dodecenoate.biosynthesis.II
+2026-02-16 12:47:27.457791 INFO::Creating boxplot for categorical data, Experiment vs PWY.6122..5.aminoimidazole.ribonucleotide.biosynthesis.II
+2026-02-16 12:47:27.571333 INFO::Creating boxplot for categorical data, Experiment vs PWY.6277..superpathway.of.5.aminoimidazole.ribonucleotide.biosynthesis
+2026-02-16 12:47:27.747036 INFO::Creating boxplot for categorical data, Experiment vs PWY.7328..superpathway.of.UDP.glucose.derived.O.antigen.building.blocks.biosynthesis
+2026-02-16 12:47:27.860028 INFO::Creating boxplot for categorical data, Experiment vs PWY0.862...5Z..dodecenoate.biosynthesis.I
+2026-02-16 12:47:27.984422 INFO::Creating boxplot for categorical data, Experiment vs PWY.7221..guanosine.ribonucleotides.de.novo.biosynthesis
+2026-02-16 12:47:28.099332 INFO::Creating boxplot for categorical data, Experiment vs PWY.5177..glutaryl.CoA.degradation
+2026-02-16 12:47:28.211982 INFO::Creating boxplot for categorical data, Experiment vs PWY.6892..thiazole.biosynthesis.I..E..coli.
+2026-02-16 12:47:28.337151 INFO::Creating boxplot for categorical data, Experiment vs PWY.2941..L.lysine.biosynthesis.II
+2026-02-16 12:47:28.455113 INFO::Creating boxplot for categorical data, Experiment vs PWY.5022..4.aminobutanoate.degradation.V
+2026-02-16 12:47:28.566119 INFO::Creating boxplot for categorical data, Experiment vs PWYG.321..mycolate.biosynthesis
+2026-02-16 12:47:28.691909 INFO::Creating boxplot for categorical data, Experiment vs PWY0.862...5Z..dodec.5.enoate.biosynthesis
+2026-02-16 12:47:28.804589 INFO::Creating boxplot for categorical data, Experiment vs FASYN.INITIAL.PWY..superpathway.of.fatty.acid.biosynthesis.initiation..E..coli.
+2026-02-16 12:47:28.930032 INFO::Creating boxplot for categorical data, Experiment vs PWY.6121..5.aminoimidazole.ribonucleotide.biosynthesis.I
+2026-02-16 12:47:29.043149 INFO::Creating boxplot for categorical data, Experiment vs HEXITOLDEGSUPER.PWY..superpathway.of.hexitol.degradation..bacteria.
+2026-02-16 12:47:29.155019 INFO::Creating boxplot for categorical data, Experiment vs MET.SAM.PWY..superpathway.of.S.adenosyl.L.methionine.biosynthesis
+2026-02-16 12:47:29.281495 INFO::Creating boxplot for categorical data, Experiment vs PWY.841..superpathway.of.purine.nucleotides.de.novo.biosynthesis.I
+2026-02-16 12:47:29.394387 INFO::Creating boxplot for categorical data, Experiment vs GALACT.GLUCUROCAT.PWY..superpathway.of.hexuronide.and.hexuronate.degradation
+2026-02-16 12:47:29.520093 INFO::Creating boxplot for categorical data, Experiment vs GLUDEG.I.PWY..GABA.shunt
+2026-02-16 12:47:29.631196 INFO::Creating boxplot for categorical data, Experiment vs SER.GLYSYN.PWY..superpathway.of.L.serine.and.glycine.biosynthesis.I
+2026-02-16 12:47:29.743639 INFO::Creating boxplot for categorical data, Experiment vs PWY.5136..fatty.acid..beta..oxidation.II..peroxisome.
+2026-02-16 12:47:29.869585 INFO::Creating boxplot for categorical data, Experiment vs PWY.7315..dTDP.N.acetylthomosamine.biosynthesis
+2026-02-16 12:47:29.982569 INFO::Creating boxplot for categorical data, Experiment vs COBALSYN.PWY..adenosylcobalamin.salvage.from.cobinamide.I
+2026-02-16 12:47:30.109197 INFO::Creating boxplot for categorical data, Experiment vs BIOTIN.BIOSYNTHESIS.PWY..biotin.biosynthesis.I
+2026-02-16 12:47:30.221797 INFO::Creating boxplot for categorical data, Experiment vs BIOTIN.BIOSYNTHESIS.PWY..biotin.biosynthesis.I
+2026-02-16 12:47:30.334664 INFO::Creating boxplot for categorical data, Experiment vs PWY.5505..L.glutamate.and.L.glutamine.biosynthesis
+2026-02-16 12:47:30.460682 INFO::Creating boxplot for categorical data, Experiment vs PWY.6519..8.amino.7.oxononanoate.biosynthesis.I
+2026-02-16 12:47:30.573866 INFO::Creating boxplot for categorical data, Experiment vs PWY.7197..pyrimidine.deoxyribonucleotide.phosphorylation
+2026-02-16 12:47:30.700122 INFO::Creating boxplot for categorical data, Experiment vs PWY.6519..8.amino.7.oxononanoate.biosynthesis.I
+2026-02-16 12:47:30.819529 INFO::Creating boxplot for categorical data, Experiment vs PWY.2942..L.lysine.biosynthesis.III
+2026-02-16 12:47:30.947713 INFO::Creating boxplot for categorical data, Experiment vs GLUCONEO.PWY..gluconeogenesis.I
+2026-02-16 12:47:31.074253 INFO::Creating boxplot for categorical data, Experiment vs ARO.PWY..chorismate.biosynthesis.I
+2026-02-16 12:47:31.188384 INFO::Creating boxplot for categorical data, Experiment vs PWY.5097..L.lysine.biosynthesis.VI
+2026-02-16 12:47:31.316562 INFO::Creating boxplot for categorical data, Experiment vs FAO.PWY..fatty.acid..beta..oxidation.I
+2026-02-16 12:47:31.42843 INFO::Creating boxplot for categorical data, Experiment vs PWY.5022..4.aminobutanoate.degradation.V
+2026-02-16 12:47:31.539756 INFO::Creating boxplot for categorical data, Experiment vs PWY.5103..L.isoleucine.biosynthesis.III
+2026-02-16 12:47:31.666228 INFO::Creating boxplot for categorical data, Experiment vs COBALSYN.PWY..adenosylcobalamin.salvage.from.cobinamide.I
+2026-02-16 12:47:31.778491 INFO::Creating boxplot for categorical data, Experiment vs PWY.6305..superpathway.of.putrescine.biosynthesis
+2026-02-16 12:47:31.904582 INFO::Creating boxplot for categorical data, Experiment vs PWY.6936..seleno.amino.acid.biosynthesis
+2026-02-16 12:47:32.022144 INFO::Creating boxplot for categorical data, Experiment vs GLUDEG.I.PWY..GABA.shunt
+2026-02-16 12:47:32.1438 INFO::Creating boxplot for categorical data, Experiment vs PWY.7234..inosine.5..phosphate.biosynthesis.III
+2026-02-16 12:47:32.260512 INFO::Creating boxplot for categorical data, Experiment vs PWY.6527..stachyose.degradation
+2026-02-16 12:47:32.373189 INFO::Creating boxplot for categorical data, Experiment vs P161.PWY..acetylene.degradation..anaerobic.
+2026-02-16 12:47:32.497976 INFO::Creating boxplot for categorical data, Experiment vs PWY0.301..L.ascorbate.degradation.I..bacterial..anaerobic.
+2026-02-16 12:47:32.611378 INFO::Creating boxplot for categorical data, Experiment vs PWY.8004..Entner.Doudoroff.pathway.I
+2026-02-16 12:47:32.736848 INFO::Creating boxplot for categorical data, Experiment vs ARG.POLYAMINE.SYN..superpathway.of.arginine.and.polyamine.biosynthesis
+2026-02-16 12:47:32.847743 INFO::Creating boxplot for categorical data, Experiment vs PWY0.1586..peptidoglycan.maturation..meso.diaminopimelate.containing.
+2026-02-16 12:47:32.958844 INFO::Creating boxplot for categorical data, Experiment vs ANAGLYCOLYSIS.PWY..glycolysis.III..from.glucose.
+2026-02-16 12:47:33.085837 INFO::Creating boxplot for categorical data, Experiment vs PWY.4041...gamma..glutamyl.cycle
+2026-02-16 12:47:33.198352 INFO::Creating boxplot for categorical data, Experiment vs FUCCAT.PWY..fucose.degradation
+2026-02-16 12:47:33.325003 INFO::Creating boxplot for categorical data, Experiment vs PWY.5136..fatty.acid..beta..oxidation.II..peroxisome.
+2026-02-16 12:47:33.441813 INFO::Creating boxplot for categorical data, Experiment vs PWY.6969..TCA.cycle.V..2.oxoglutarate.synthase.
+2026-02-16 12:47:33.567679 INFO::Creating boxplot for categorical data, Experiment vs PWY.5913..partial.TCA.cycle..obligate.autotrophs.
+2026-02-16 12:47:33.678579 INFO::Creating boxplot for categorical data, Experiment vs PWY.6387..UDP.N.acetylmuramoyl.pentapeptide.biosynthesis.I..meso.diaminopimelate.containing.
+2026-02-16 12:47:33.78972 INFO::Creating boxplot for categorical data, Experiment vs HEMESYN2.PWY..heme.biosynthesis.II..anaerobic.
+2026-02-16 12:47:33.956194 INFO::Creating boxplot for categorical data, Experiment vs PWY.621..sucrose.degradation.III..sucrose.invertase.
+2026-02-16 12:47:34.069323 INFO::Creating boxplot for categorical data, Experiment vs PWY.5973..cis.vaccenate.biosynthesis
+2026-02-16 12:47:34.204711 INFO::Creating boxplot for categorical data, Experiment vs ARG.POLYAMINE.SYN..superpathway.of.arginine.and.polyamine.biosynthesis
+2026-02-16 12:47:34.317505 INFO::Creating boxplot for categorical data, Experiment vs PWY.5188..tetrapyrrole.biosynthesis.I..from.glutamate.
+2026-02-16 12:47:34.432414 INFO::Creating boxplot for categorical data, Experiment vs PWY.5690..TCA.cycle.II..plants.and.fungi.
+2026-02-16 12:47:34.567394 INFO::Creating boxplot for categorical data, Experiment vs PEPTIDOGLYCANSYN.PWY..peptidoglycan.biosynthesis.I..meso.diaminopimelate.containing.
+2026-02-16 12:47:34.680123 INFO::Creating boxplot for categorical data, Experiment vs HISDEG.PWY..L.histidine.degradation.I
+2026-02-16 12:47:34.808315 INFO::Creating boxplot for categorical data, Experiment vs PWY1ZNC.1..assimilatory.sulfate.reduction.IV
+2026-02-16 12:47:34.927378 INFO::Creating boxplot for categorical data, Experiment vs ARGSYNBSUB.PWY..L.arginine.biosynthesis.II..acetyl.cycle.
+2026-02-16 12:47:35.041827 INFO::Creating boxplot for categorical data, Experiment vs PWY.7663..gondoate.biosynthesis..anaerobic.
+2026-02-16 12:47:35.178938 INFO::Creating boxplot for categorical data, Experiment vs SO4ASSIM.PWY..assimilatory.sulfate.reduction.I
+2026-02-16 12:47:35.292526 INFO::Creating boxplot for categorical data, Experiment vs PWY.6731..starch.degradation.III
+2026-02-16 12:47:35.415724 INFO::Creating boxplot for categorical data, Experiment vs GLUCOSE1PMETAB.PWY..glucose.and.glucose.1.phosphate.degradation
+2026-02-16 12:47:35.54101 INFO::Creating boxplot for categorical data, Experiment vs CALVIN.PWY..Calvin.Benson.Bassham.cycle
+2026-02-16 12:47:35.656424 INFO::Creating boxplot for categorical data, Experiment vs PWY.1269..CMP.3.deoxy.D.manno.octulosonate.biosynthesis.I
+2026-02-16 12:47:35.791445 INFO::Creating boxplot for categorical data, Experiment vs PWY.6385..peptidoglycan.biosynthesis.III..mycobacteria.
+2026-02-16 12:47:35.904007 INFO::Creating boxplot for categorical data, Experiment vs HEMESYN2.PWY..heme.biosynthesis.II..anaerobic.
+2026-02-16 12:47:36.019167 INFO::Creating boxplot for categorical data, Experiment vs CENTFERM.PWY..pyruvate.fermentation.to.butanoate
+2026-02-16 12:47:36.153563 INFO::Creating boxplot for categorical data, Experiment vs PWY.7388..octanoyl..acyl.carrier.protein..biosynthesis..mitochondria..yeast.
+2026-02-16 12:47:36.276158 INFO::Creating boxplot for categorical data, Experiment vs THISYN.PWY..superpathway.of.thiamin.diphosphate.biosynthesis.I
+2026-02-16 12:47:36.421878 INFO::Creating boxplot for categorical data, Experiment vs PWY.6590..superpathway.of.Clostridium.acetobutylicum.acidogenic.fermentation
+2026-02-16 12:47:36.536401 INFO::Creating boxplot for categorical data, Experiment vs FAO.PWY..fatty.acid..beta..oxidation.I
+2026-02-16 12:47:36.658972 INFO::Creating boxplot for categorical data, Experiment vs PWY.6386..UDP.N.acetylmuramoyl.pentapeptide.biosynthesis.II..lysine.containing.
+2026-02-16 12:47:36.802837 INFO::Creating boxplot for categorical data, Experiment vs PWY.7117..C4.photosynthetic.carbon.assimilation.cycle..PEPCK.type
+2026-02-16 12:47:36.92474 INFO::Creating boxplot for categorical data, Experiment vs PWY0.1586..peptidoglycan.maturation..meso.diaminopimelate.containing.
+2026-02-16 12:47:37.067368 INFO::Creating boxplot for categorical data, Experiment vs GLUCOSE1PMETAB.PWY..glucose.and.glucose.1.phosphate.degradation
+2026-02-16 12:47:37.189593 INFO::Creating boxplot for categorical data, Experiment vs GLCMANNANAUT.PWY..superpathway.of.N.acetylglucosamine..N.acetylmannosamine.and.N.acetylneuraminate.degradation
+2026-02-16 12:47:37.31527 INFO::Creating boxplot for categorical data, Experiment vs PWY.7388..octanoyl..acyl.carrier.protein..biosynthesis..mitochondria..yeast.
+2026-02-16 12:47:37.440621 INFO::Creating boxplot for categorical data, Experiment vs PWY0.845..superpathway.of.pyridoxal.5..phosphate.biosynthesis.and.salvage
+2026-02-16 12:47:37.556011 INFO::Creating boxplot for categorical data, Experiment vs PWY.6163..chorismate.biosynthesis.from.3.dehydroquinate
+2026-02-16 12:47:37.690462 INFO::Creating boxplot for categorical data, Experiment vs PWY.6147..6.hydroxymethyl.dihydropterin.diphosphate.biosynthesis.I
+2026-02-16 12:47:37.803931 INFO::Creating boxplot for categorical data, Experiment vs PYRIDOXSYN.PWY..pyridoxal.5..phosphate.biosynthesis.I
+2026-02-16 12:47:37.935094 INFO::Creating boxplot for categorical data, Experiment vs TCA..TCA.cycle.I..prokaryotic.
+2026-02-16 12:47:38.05289 INFO::Creating boxplot for categorical data, Experiment vs PWY.7198..pyrimidine.deoxyribonucleotides.de.novo.biosynthesis.IV
+2026-02-16 12:47:38.168161 INFO::Creating boxplot for categorical data, Experiment vs UDPNAGSYN.PWY..UDP.N.acetyl.D.glucosamine.biosynthesis.I
+2026-02-16 12:47:38.302598 INFO::Creating boxplot for categorical data, Experiment vs PWY.7316..dTDP.N.acetylviosamine.biosynthesis
+2026-02-16 12:47:38.4173 INFO::Creating boxplot for categorical data, Experiment vs HOMOSER.METSYN.PWY..L.methionine.biosynthesis.I
+2026-02-16 12:47:38.557411 INFO::Creating boxplot for categorical data, Experiment vs METSYN.PWY..L.homoserine.and.L.methionine.biosynthesis
+2026-02-16 12:47:38.670238 INFO::Creating boxplot for categorical data, Experiment vs PWY.5675..nitrate.reduction.V..assimilatory.
+2026-02-16 12:47:38.783925 INFO::Creating boxplot for categorical data, Experiment vs PWY.7323..superpathway.of.GDP.mannose.derived.O.antigen.building.blocks.biosynthesis
+2026-02-16 12:47:38.91768 INFO::Creating boxplot for categorical data, Experiment vs PWY.6143..CMP.pseudaminate.biosynthesis
+2026-02-16 12:47:39.032099 INFO::Creating boxplot for categorical data, Experiment vs PWY.1861..formaldehyde.assimilation.II..RuMP.Cycle.
+2026-02-16 12:47:39.165691 INFO::Creating boxplot for categorical data, Experiment vs PWY.5083..NAD.NADH.phosphorylation.and.dephosphorylation
+2026-02-16 12:47:39.279144 INFO::Creating boxplot for categorical data, Experiment vs PWY.6282..palmitoleate.biosynthesis.I..from..5Z..dodec.5.enoate.
+2026-02-16 12:47:39.411749 INFO::Creating boxplot for categorical data, Experiment vs PWY.6700..queuosine.biosynthesis
+2026-02-16 12:47:39.526989 INFO::Creating boxplot for categorical data, Experiment vs TRNA.CHARGING.PWY..tRNA.charging
+2026-02-16 12:47:39.642063 INFO::Creating boxplot for categorical data, Experiment vs GLYOXYLATE.BYPASS..glyoxylate.cycle
+2026-02-16 12:47:39.77506 INFO::Creating boxplot for categorical data, Experiment vs PWY.7383..anaerobic.energy.metabolism..invertebrates..cytosol.
+2026-02-16 12:47:39.889998 INFO::Creating boxplot for categorical data, Experiment vs PWY.7664..oleate.biosynthesis.IV..anaerobic.
+2026-02-16 12:47:40.024071 INFO::Creating boxplot for categorical data, Experiment vs FASYN.ELONG.PWY..fatty.acid.elongation....saturated
+2026-02-16 12:47:40.137501 INFO::Creating boxplot for categorical data, Experiment vs MET.SAM.PWY..superpathway.of.S.adenosyl.L.methionine.biosynthesis
+2026-02-16 12:47:40.676208 INFO::Creating boxplot for categorical data, Experiment vs PWY.5104..L.isoleucine.biosynthesis.IV
+2026-02-16 12:47:40.77694 INFO::Creating boxplot for categorical data, Experiment vs PWY.5989..stearate.biosynthesis.II..bacteria.and.plants.
+2026-02-16 12:47:40.882837 INFO::Creating boxplot for categorical data, Experiment vs PWY.5675..nitrate.reduction.V..assimilatory.
+2026-02-16 12:47:40.991417 INFO::Creating boxplot for categorical data, Experiment vs PWY.5083..NAD.NADH.phosphorylation.and.dephosphorylation
+2026-02-16 12:47:41.092484 INFO::Creating boxplot for categorical data, Experiment vs PWY.6607..guanosine.nucleotides.degradation.I
+2026-02-16 12:47:41.19681 INFO::Creating boxplot for categorical data, Experiment vs HEME.BIOSYNTHESIS.II..heme.biosynthesis.I..aerobic.
+2026-02-16 12:47:41.310988 INFO::Creating boxplot for categorical data, Experiment vs SO4ASSIM.PWY..sulfate.reduction.I..assimilatory.
+2026-02-16 12:47:41.417284 INFO::Creating boxplot for categorical data, Experiment vs PWY0.1298..superpathway.of.pyrimidine.deoxyribonucleosides.degradation
+2026-02-16 12:47:41.527277 INFO::Creating boxplot for categorical data, Experiment vs PWY.1861..formaldehyde.assimilation.II..RuMP.Cycle.
+2026-02-16 12:47:41.628069 INFO::Creating boxplot for categorical data, Experiment vs HEXITOLDEGSUPER.PWY..superpathway.of.hexitol.degradation..bacteria.
+2026-02-16 12:47:41.731938 INFO::Creating boxplot for categorical data, Experiment vs PWY.6608..guanosine.nucleotides.degradation.III
+2026-02-16 12:47:41.838964 INFO::Creating boxplot for categorical data, Experiment vs PWY66.399..gluconeogenesis.III
+2026-02-16 12:47:41.941455 INFO::Creating boxplot for categorical data, Experiment vs OANTIGEN.PWY..O.antigen.building.blocks.biosynthesis..E..coli.
+2026-02-16 12:47:42.052814 INFO::Creating boxplot for categorical data, Experiment vs PWY.5971..palmitate.biosynthesis..type.II.fatty.acid.synthase.
+2026-02-16 12:47:42.163609 INFO::Creating boxplot for categorical data, Experiment vs P108.PWY..pyruvate.fermentation.to.propanoate.I
+2026-02-16 12:47:42.273945 INFO::Creating boxplot for categorical data, Experiment vs PWY.6285..superpathway.of.fatty.acids.biosynthesis..E..coli.
+2026-02-16 12:47:42.384685 INFO::Creating boxplot for categorical data, Experiment vs X1CMET2.PWY..N10.formyl.tetrahydrofolate.biosynthesis
+2026-02-16 12:47:42.490746 INFO::Creating boxplot for categorical data, Experiment vs PWY66.400..glycolysis.VI..metazoan.
+2026-02-16 12:47:42.60691 INFO::Creating boxplot for categorical data, Experiment vs ANAEROFRUCAT.PWY..homolactic.fermentation
+2026-02-16 12:47:42.711056 INFO::Creating boxplot for categorical data, Experiment vs GLYOXYLATE.BYPASS..glyoxylate.cycle
+2026-02-16 12:47:42.815631 INFO::Creating boxplot for categorical data, Experiment vs GALACTUROCAT.PWY..D.galacturonate.degradation.I
+2026-02-16 12:47:42.94003 INFO::Creating boxplot for categorical data, Experiment vs COLANSYN.PWY..colanic.acid.building.blocks.biosynthesis
+2026-02-16 12:47:43.048495 INFO::Creating boxplot for categorical data, Experiment vs PWY.6151..S.adenosyl.L.methionine.cycle.I
+2026-02-16 12:47:43.163035 INFO::Creating boxplot for categorical data, Experiment vs PWY0.162..superpathway.of.pyrimidine.ribonucleotides.de.novo.biosynthesis
+2026-02-16 12:47:43.268532 INFO::Creating boxplot for categorical data, Experiment vs SALVADEHYPOX.PWY..adenosine.nucleotides.degradation.II
+2026-02-16 12:47:43.373212 INFO::Creating boxplot for categorical data, Experiment vs HEME.BIOSYNTHESIS.II..heme.biosynthesis.I..aerobic.
+2026-02-16 12:47:43.487167 INFO::Creating boxplot for categorical data, Experiment vs P441.PWY..superpathway.of.N.acetylneuraminate.degradation
+2026-02-16 12:47:43.590193 INFO::Creating boxplot for categorical data, Experiment vs PWY.6595..superpathway.of.guanosine.nucleotides.degradation..plants.
+2026-02-16 12:47:43.702064 INFO::Creating boxplot for categorical data, Experiment vs P562.PWY..myo.inositol.degradation.I
+2026-02-16 12:47:43.803627 INFO::Creating boxplot for categorical data, Experiment vs PANTOSYN.PWY..pantothenate.and.coenzyme.A.biosynthesis.I
+2026-02-16 12:47:43.911493 INFO::Creating boxplot for categorical data, Experiment vs POLYAMSYN.PWY..superpathway.of.polyamine.biosynthesis.I
+2026-02-16 12:47:44.021042 INFO::Creating boxplot for categorical data, Experiment vs PWY.7282..4.amino.2.methyl.5.phosphomethylpyrimidine.biosynthesis..yeast.
+2026-02-16 12:47:44.123612 INFO::Creating boxplot for categorical data, Experiment vs PWY.6703..preQ0.biosynthesis
+2026-02-16 12:47:44.234979 INFO::Creating boxplot for categorical data, Experiment vs P441.PWY..superpathway.of.N.acetylneuraminate.degradation
+2026-02-16 12:47:44.338464 INFO::Creating boxplot for categorical data, Experiment vs PWY.7111..pyruvate.fermentation.to.isobutanol..engineered.
+2026-02-16 12:47:44.444056 INFO::Creating boxplot for categorical data, Experiment vs PWY0.1296..purine.ribonucleosides.degradation
+2026-02-16 12:47:44.553649 INFO::Creating boxplot for categorical data, Experiment vs PANTO.PWY..phosphopantothenate.biosynthesis.I
+2026-02-16 12:47:44.656705 INFO::Creating boxplot for categorical data, Experiment vs GLUCONEO.PWY..gluconeogenesis.I
+2026-02-16 12:47:44.768057 INFO::Creating boxplot for categorical data, Experiment vs ARGSYN.PWY..L.arginine.biosynthesis.I..via.L.ornithine.
+2026-02-16 12:47:44.870258 INFO::Creating boxplot for categorical data, Experiment vs P461.PWY..hexitol.fermentation.to.lactate..formate..ethanol.and.acetate
+2026-02-16 12:47:44.976042 INFO::Creating boxplot for categorical data, Experiment vs GLCMANNANAUT.PWY..superpathway.of.N.acetylglucosamine..N.acetylmannosamine.and.N.acetylneuraminate.degradation
+2026-02-16 12:47:45.084027 INFO::Creating boxplot for categorical data, Experiment vs PWY.7198..pyrimidine.deoxyribonucleotides.de.novo.biosynthesis.IV
+2026-02-16 12:47:45.187448 INFO::Creating boxplot for categorical data, Experiment vs PWY.6936..seleno.amino.acid.biosynthesis
+2026-02-16 12:47:45.299539 INFO::Creating boxplot for categorical data, Experiment vs PWY.5989..stearate.biosynthesis.II..bacteria.and.plants.
+2026-02-16 12:47:45.401357 INFO::Creating boxplot for categorical data, Experiment vs ANAEROFRUCAT.PWY..homolactic.fermentation
+2026-02-16 12:47:45.513314 INFO::Creating boxplot for categorical data, Experiment vs FUC.RHAMCAT.PWY..superpathway.of.fucose.and.rhamnose.degradation
+2026-02-16 12:47:45.615448 INFO::Creating boxplot for categorical data, Experiment vs FASYN.ELONG.PWY..fatty.acid.elongation....saturated
+2026-02-16 12:47:45.72032 INFO::Creating boxplot for categorical data, Experiment vs SULFATE.CYS.PWY..superpathway.of.sulfate.assimilation.and.cysteine.biosynthesis
+2026-02-16 12:47:45.829796 INFO::Creating boxplot for categorical data, Experiment vs PWY.5100..pyruvate.fermentation.to.acetate.and.lactate.II
+2026-02-16 12:47:45.933191 INFO::Creating boxplot for categorical data, Experiment vs PWY.7664..oleate.biosynthesis.IV..anaerobic.
+2026-02-16 12:47:46.044721 INFO::Creating boxplot for categorical data, Experiment vs PWY.6282..palmitoleate.biosynthesis.I..from..5Z..dodec.5.enoate.
+2026-02-16 12:47:46.145754 INFO::Creating boxplot for categorical data, Experiment vs PWY.7219..adenosine.ribonucleotides.de.novo.biosynthesis
+2026-02-16 12:47:46.25335 INFO::Creating boxplot for categorical data, Experiment vs ARGORNPROST.PWY..arginine..ornithine.and.proline.interconversion
+2026-02-16 12:47:46.400459 INFO::Creating boxplot for categorical data, Experiment vs VALSYN.PWY..L.valine.biosynthesis
+2026-02-16 12:47:46.509649 INFO::Creating boxplot for categorical data, Experiment vs PWY.821..superpathway.of.sulfur.amino.acid.biosynthesis..Saccharomyces.cerevisiae.
+2026-02-16 12:47:46.630791 INFO::Creating boxplot for categorical data, Experiment vs METH.ACETATE.PWY..methanogenesis.from.acetate
+2026-02-16 12:47:46.737394 INFO::Creating boxplot for categorical data, Experiment vs PWY0.781..aspartate.superpathway
+2026-02-16 12:47:46.846069 INFO::Creating boxplot for categorical data, Experiment vs PWY.5345..superpathway.of.L.methionine.biosynthesis..by.sulfhydrylation.
+2026-02-16 12:47:46.967701 INFO::Creating boxplot for categorical data, Experiment vs PWY.5189..tetrapyrrole.biosynthesis.II..from.glycine.
+2026-02-16 12:47:47.073189 INFO::Creating boxplot for categorical data, Experiment vs SO4ASSIM.PWY..sulfate.reduction.I..assimilatory.
+2026-02-16 12:47:47.193111 INFO::Creating boxplot for categorical data, Experiment vs PWY.6629..superpathway.of.L.tryptophan.biosynthesis
+2026-02-16 12:47:47.303798 INFO::Creating boxplot for categorical data, Experiment vs SULFATE.CYS.PWY..superpathway.of.sulfate.assimilation.and.cysteine.biosynthesis
+2026-02-16 12:47:47.416023 INFO::Creating boxplot for categorical data, Experiment vs PWY.2723..trehalose.degradation.V
+2026-02-16 12:47:47.545583 INFO::Creating boxplot for categorical data, Experiment vs P4.PWY..superpathway.of.L.lysine..L.threonine.and.L.methionine.biosynthesis.I
+2026-02-16 12:47:47.657725 INFO::Creating boxplot for categorical data, Experiment vs GLYCOCAT.PWY..glycogen.degradation.I..bacterial.
+2026-02-16 12:47:47.768944 INFO::Creating boxplot for categorical data, Experiment vs COLANSYN.PWY..colanic.acid.building.blocks.biosynthesis
+2026-02-16 12:47:47.898576 INFO::Creating boxplot for categorical data, Experiment vs PWY.821..superpathway.of.sulfur.amino.acid.biosynthesis..Saccharomyces.cerevisiae.
+2026-02-16 12:47:48.005984 INFO::Creating boxplot for categorical data, Experiment vs PWY.7220..adenosine.deoxyribonucleotides.de.novo.biosynthesis.II
+2026-02-16 12:47:48.128268 INFO::Creating boxplot for categorical data, Experiment vs PWY.7222..guanosine.deoxyribonucleotides.de.novo.biosynthesis.II
+2026-02-16 12:47:48.234828 INFO::Creating boxplot for categorical data, Experiment vs PWY.1042..glycolysis.IV..plant.cytosol.
+2026-02-16 12:47:48.342947 INFO::Creating boxplot for categorical data, Experiment vs PWY.2941..L.lysine.biosynthesis.II
+2026-02-16 12:47:48.464997 INFO::Creating boxplot for categorical data, Experiment vs PWY.5505..L.glutamate.and.L.glutamine.biosynthesis
+2026-02-16 12:47:48.570425 INFO::Creating boxplot for categorical data, Experiment vs ARGORNPROST.PWY..arginine..ornithine.and.proline.interconversion
+2026-02-16 12:47:48.693419 INFO::Creating boxplot for categorical data, Experiment vs PWY.6703..preQ0.biosynthesis
+2026-02-16 12:47:48.808104 INFO::Creating boxplot for categorical data, Experiment vs PWY.2723..trehalose.degradation.V
+2026-02-16 12:47:48.922966 INFO::Creating boxplot for categorical data, Experiment vs PWY0.781..aspartate.superpathway
+2026-02-16 12:47:49.044612 INFO::Creating boxplot for categorical data, Experiment vs GLYCOCAT.PWY..glycogen.degradation.I..bacterial.
+2026-02-16 12:47:49.150542 INFO::Creating boxplot for categorical data, Experiment vs PWY.6143..CMP.pseudaminate.biosynthesis
+2026-02-16 12:47:49.278033 INFO::Creating boxplot for categorical data, Experiment vs KETOGLUCONMET.PWY..ketogluconate.metabolism
+2026-02-16 12:47:49.387873 INFO::Creating boxplot for categorical data, Experiment vs PWY.5676..acetyl.CoA.fermentation.to.butanoate.II
+2026-02-16 12:47:49.497157 INFO::Creating boxplot for categorical data, Experiment vs PWY.5005..biotin.biosynthesis.II
+2026-02-16 12:47:49.618969 INFO::Creating boxplot for categorical data, Experiment vs PWY.5189..tetrapyrrole.biosynthesis.II..from.glycine.
+2026-02-16 12:47:49.72437 INFO::Creating boxplot for categorical data, Experiment vs P4.PWY..superpathway.of.L.lysine..L.threonine.and.L.methionine.biosynthesis.I
+2026-02-16 12:47:49.845224 INFO::Creating boxplot for categorical data, Experiment vs PWY.6629..superpathway.of.L.tryptophan.biosynthesis
+2026-02-16 12:47:49.951639 INFO::Creating boxplot for categorical data, Experiment vs GOLPDLCAT.PWY..superpathway.of.glycerol.degradation.to.1.3.propanediol
+2026-02-16 12:47:50.058567 INFO::Creating boxplot for categorical data, Experiment vs CITRULBIO.PWY..L.citrulline.biosynthesis
+2026-02-16 12:47:50.18368 INFO::Creating boxplot for categorical data, Experiment vs PWY.4984..urea.cycle
+2026-02-16 12:47:50.302045 INFO::Creating boxplot for categorical data, Experiment vs ANAGLYCOLYSIS.PWY..glycolysis.III..from.glucose.
+2026-02-16 12:47:50.430582 INFO::Creating boxplot for categorical data, Experiment vs P162.PWY..L.glutamate.degradation.V..via.hydroxyglutarate.
+2026-02-16 12:47:50.539841 INFO::Creating boxplot for categorical data, Experiment vs PWY.5913..TCA.cycle.VI..obligate.autotrophs.
+2026-02-16 12:47:50.649253 INFO::Creating boxplot for categorical data, Experiment vs PWY.5918..superpathay.of.heme.biosynthesis.from.glutamate
+2026-02-16 12:47:50.769484 INFO::Creating boxplot for categorical data, Experiment vs PWY.6305..putrescine.biosynthesis.IV
+2026-02-16 12:47:50.874696 INFO::Creating boxplot for categorical data, Experiment vs GOLPDLCAT.PWY..superpathway.of.glycerol.degradation.to.1.3.propanediol
+2026-02-16 12:47:50.995992 INFO::Creating boxplot for categorical data, Experiment vs HSERMETANA.PWY..L.methionine.biosynthesis.III
+2026-02-16 12:47:51.100677 INFO::Creating boxplot for categorical data, Experiment vs PWY.241..C4.photosynthetic.carbon.assimilation.cycle..NADP.ME.type
+2026-02-16 12:47:51.22 INFO::Creating boxplot for categorical data, Experiment vs PWY.6606..guanosine.nucleotides.degradation.II
+2026-02-16 12:47:51.329882 INFO::Creating boxplot for categorical data, Experiment vs PWY.5723..Rubisco.shunt
+2026-02-16 12:47:51.436677 INFO::Creating boxplot for categorical data, Experiment vs PWY.7199..pyrimidine.deoxyribonucleosides.salvage
+2026-02-16 12:47:51.558046 INFO::Creating boxplot for categorical data, Experiment vs PWY.6895..superpathway.of.thiamin.diphosphate.biosynthesis.II
+2026-02-16 12:47:51.66255 INFO::Creating boxplot for categorical data, Experiment vs PYRIDNUCSYN.PWY..NAD.biosynthesis.I..from.aspartate.
+2026-02-16 12:47:51.783854 INFO::Creating boxplot for categorical data, Experiment vs P162.PWY..L.glutamate.degradation.V..via.hydroxyglutarate.
+2026-02-16 12:47:51.888682 INFO::Creating boxplot for categorical data, Experiment vs PWY.6891..thiazole.biosynthesis.II..Bacillus.
+2026-02-16 12:47:51.995179 INFO::Creating boxplot for categorical data, Experiment vs TRPSYN.PWY..L.tryptophan.biosynthesis
+2026-02-16 12:47:52.115849 INFO::Creating boxplot for categorical data, Experiment vs PWY.6147..6.hydroxymethyl.dihydropterin.diphosphate.biosynthesis.I
+2026-02-16 12:47:52.222031 INFO::Creating boxplot for categorical data, Experiment vs GLYCOLYSIS..glycolysis.I..from.glucose.6.phosphate.
+2026-02-16 12:47:52.387347 INFO::Creating boxplot for categorical data, Experiment vs P164.PWY..purine.nucleobases.degradation.I..anaerobic.
+2026-02-16 12:47:52.500749 INFO::Creating boxplot for categorical data, Experiment vs PWY.6901..superpathway.of.glucose.and.xylose.degradation
+2026-02-16 12:47:52.617019 INFO::Creating boxplot for categorical data, Experiment vs P461.PWY..hexitol.fermentation.to.lactate..formate..ethanol.and.acetate
+2026-02-16 12:47:52.72775 INFO::Creating boxplot for categorical data, Experiment vs HSERMETANA.PWY..L.methionine.biosynthesis.III
+2026-02-16 12:47:52.836172 INFO::Creating boxplot for categorical data, Experiment vs PWY.5918..superpathay.of.heme.biosynthesis.from.glutamate
+2026-02-16 12:47:52.951906 INFO::Creating boxplot for categorical data, Experiment vs PWY.6353..purine.nucleotides.degradation.II..aerobic.
+2026-02-16 12:47:53.061239 INFO::Creating boxplot for categorical data, Experiment vs PWY.7282..4.amino.2.methyl.5.phosphomethylpyrimidine.biosynthesis..yeast.
+2026-02-16 12:47:53.169106 INFO::Creating boxplot for categorical data, Experiment vs CENTFERM.PWY..pyruvate.fermentation.to.butanoate
+2026-02-16 12:47:53.288563 INFO::Creating boxplot for categorical data, Experiment vs PWY.6527..stachyose.degradation
+2026-02-16 12:47:53.400276 INFO::Creating boxplot for categorical data, Experiment vs PWY.724..superpathway.of.L.lysine..L.threonine.and.L.methionine.biosynthesis.II
+2026-02-16 12:47:53.518653 INFO::Creating boxplot for categorical data, Experiment vs PWY.6590..superpathway.of.Clostridium.acetobutylicum.acidogenic.fermentation
+2026-02-16 12:47:53.628532 INFO::Creating boxplot for categorical data, Experiment vs BRANCHED.CHAIN.AA.SYN.PWY..superpathway.of.branched.amino.acid.biosynthesis
+2026-02-16 12:47:53.7368 INFO::Creating boxplot for categorical data, Experiment vs PWY.6895..superpathway.of.thiamin.diphosphate.biosynthesis.II
+2026-02-16 12:47:53.855286 INFO::Creating boxplot for categorical data, Experiment vs PWY.6891..thiazole.biosynthesis.II..Bacillus.
+2026-02-16 12:47:53.965446 INFO::Creating boxplot for categorical data, Experiment vs PPGPPMET.PWY..ppGpp.biosynthesis
+2026-02-16 12:47:54.085267 INFO::Creating boxplot for categorical data, Experiment vs POLYAMSYN.PWY..superpathway.of.polyamine.biosynthesis.I
+2026-02-16 12:47:54.203431 INFO::Creating boxplot for categorical data, Experiment vs PWY.6588..pyruvate.fermentation.to.acetone
+2026-02-16 12:47:54.316385 INFO::Creating boxplot for categorical data, Experiment vs PWY.6126..superpathway.of.adenosine.nucleotides.de.novo.biosynthesis.II
+2026-02-16 12:47:54.436171 INFO::Creating boxplot for categorical data, Experiment vs PWY.6125..superpathway.of.guanosine.nucleotides.de.novo.biosynthesis.II
+2026-02-16 12:47:54.547677 INFO::Creating boxplot for categorical data, Experiment vs PWY.7208..superpathway.of.pyrimidine.nucleobases.salvage
+2026-02-16 12:47:54.670625 INFO::Creating boxplot for categorical data, Experiment vs PWY.5484..glycolysis.II..from.fructose.6.phosphate.
+2026-02-16 12:47:54.781679 INFO::Creating boxplot for categorical data, Experiment vs PWY.7199..pyrimidine.deoxyribonucleosides.salvage
+2026-02-16 12:47:54.891039 INFO::Creating boxplot for categorical data, Experiment vs PWY0.162..superpathway.of.pyrimidine.ribonucleotides.de.novo.biosynthesis
+2026-02-16 12:47:55.00969 INFO::Creating boxplot for categorical data, Experiment vs PWY.6901..superpathway.of.glucose.and.xylose.degradation
+2026-02-16 12:47:55.120154 INFO::Creating boxplot for categorical data, Experiment vs PANTO.PWY..phosphopantothenate.biosynthesis.I
+2026-02-16 12:47:55.237796 INFO::Creating boxplot for categorical data, Experiment vs HISTSYN.PWY..L.histidine.biosynthesis
+2026-02-16 12:47:55.348708 INFO::Creating boxplot for categorical data, Experiment vs PWY.5005..biotin.biosynthesis.II
+2026-02-16 12:47:55.458245 INFO::Creating boxplot for categorical data, Experiment vs GLYCOGENSYNTH.PWY..glycogen.biosynthesis.I..from.ADP.D.Glucose.
+2026-02-16 12:47:55.578027 INFO::Creating boxplot for categorical data, Experiment vs PWY66.422..D.galactose.degradation.V..Leloir.pathway.
+2026-02-16 12:47:55.688237 INFO::Creating boxplot for categorical data, Experiment vs PWY4LZ.257..superpathway.of.fermentation..Chlamydomonas.reinhardtii.
+2026-02-16 12:47:55.807044 INFO::Creating boxplot for categorical data, Experiment vs PENTOSE.P.PWY..pentose.phosphate.pathway
+2026-02-16 12:47:55.917003 INFO::Creating boxplot for categorical data, Experiment vs PWY.5100..pyruvate.fermentation.to.acetate.and.lactate.II
+2026-02-16 12:47:56.027327 INFO::Creating boxplot for categorical data, Experiment vs LACTOSECAT.PWY..lactose.and.galactose.degradation.I
+2026-02-16 12:47:56.146551 INFO::Creating boxplot for categorical data, Experiment vs PWY.6163..chorismate.biosynthesis.from.3.dehydroquinate
+2026-02-16 12:47:56.257882 INFO::Creating boxplot for categorical data, Experiment vs PWY.7400..L.arginine.biosynthesis.IV..archaebacteria.
+2026-02-16 12:47:56.377484 INFO::Creating boxplot for categorical data, Experiment vs TRNA.CHARGING.PWY..tRNA.charging
+2026-02-16 12:47:56.48888 INFO::Creating boxplot for categorical data, Experiment vs PWY.6353..purine.nucleotides.degradation.II..aerobic.
+2026-02-16 12:47:56.597671 INFO::Creating boxplot for categorical data, Experiment vs ASPASN.PWY..superpathway.of.L.aspartate.and.L.asparagine.biosynthesis
+2026-02-16 12:47:56.716456 INFO::Creating boxplot for categorical data, Experiment vs SALVADEHYPOX.PWY..adenosine.nucleotides.degradation.II
+2026-02-16 12:47:56.826158 INFO::Creating boxplot for categorical data, Experiment vs PWY.5659..GDP.mannose.biosynthesis
+2026-02-16 12:47:56.944587 INFO::Creating boxplot for categorical data, Experiment vs P42.PWY..incomplete.reductive.TCA.cycle
+2026-02-16 12:47:57.05477 INFO::Creating boxplot for categorical data, Experiment vs PWY.6386..UDP.N.acetylmuramoyl.pentapeptide.biosynthesis.II..lysine.containing.
+2026-02-16 12:47:57.174828 INFO::Creating boxplot for categorical data, Experiment vs POLYAMINSYN3.PWY..superpathway.of.polyamine.biosynthesis.II
+2026-02-16 12:47:57.287272 INFO::Creating boxplot for categorical data, Experiment vs PWY.2942..L.lysine.biosynthesis.III
+2026-02-16 12:47:57.397983 INFO::Creating boxplot for categorical data, Experiment vs P562.PWY..myo.inositol.degradation.I
+2026-02-16 12:47:57.516758 INFO::Creating boxplot for categorical data, Experiment vs SER.GLYSYN.PWY..superpathway.of.L.serine.and.glycine.biosynthesis.I
+2026-02-16 12:47:57.631005 INFO::Creating boxplot for categorical data, Experiment vs PWY.7228..superpathway.of.guanosine.nucleotides.de.novo.biosynthesis.I
+2026-02-16 12:47:57.750167 INFO::Creating boxplot for categorical data, Experiment vs PWY.5177..glutaryl.CoA.degradation
+2026-02-16 12:47:57.860539 INFO::Creating boxplot for categorical data, Experiment vs METH.ACETATE.PWY..methanogenesis.from.acetate
+2026-02-16 12:47:57.978406 INFO::Creating boxplot for categorical data, Experiment vs PWY.7383..anaerobic.energy.metabolism..invertebrates..cytosol.
+2026-02-16 12:47:58.095246 INFO::Creating boxplot for categorical data, Experiment vs PENTOSE.P.PWY..pentose.phosphate.pathway
+2026-02-16 12:47:58.216159 INFO::Creating boxplot for categorical data, Experiment vs P161.PWY..acetylene.degradation
+2026-02-16 12:47:58.385397 INFO::Creating boxplot for categorical data, Experiment vs PWY.6507..4.deoxy.L.threo.hex.4.enopyranuronate.degradation
+2026-02-16 12:47:58.511266 INFO::Creating boxplot for categorical data, Experiment vs LACTOSECAT.PWY..lactose.and.galactose.degradation.I
+2026-02-16 12:47:58.651678 INFO::Creating boxplot for categorical data, Experiment vs ILEUSYN.PWY..L.isoleucine.biosynthesis.I..from.threonine.
+2026-02-16 12:47:58.763344 INFO::Creating boxplot for categorical data, Experiment vs PWY.5659..GDP.mannose.biosynthesis
+2026-02-16 12:47:58.878055 INFO::Creating boxplot for categorical data, Experiment vs POLYAMINSYN3.PWY..superpathway.of.polyamine.biosynthesis.II
+2026-02-16 12:47:59.005943 INFO::Creating boxplot for categorical data, Experiment vs PWY.7229..superpathway.of.adenosine.nucleotides.de.novo.biosynthesis.I
+2026-02-16 12:47:59.117846 INFO::Creating boxplot for categorical data, Experiment vs PWY.7221..guanosine.ribonucleotides.de.novo.biosynthesis
+2026-02-16 12:47:59.239767 INFO::Creating boxplot for categorical data, Experiment vs ARGSYN.PWY..L.arginine.biosynthesis.I..via.L.ornithine.
+2026-02-16 12:47:59.360303 INFO::Creating boxplot for categorical data, Experiment vs PWY.5484..glycolysis.II..from.fructose.6.phosphate.
+2026-02-16 12:47:59.474432 INFO::Creating boxplot for categorical data, Experiment vs PWY.6549..L.glutamine.biosynthesis.III
+2026-02-16 12:48:00.615462 INFO::Plotting data for metadata number 2, Groups
+2026-02-16 12:48:00.616395 INFO::Creating boxplot for categorical data, Groups vs PYRIDOXSYN.PWY..pyridoxal.5..phosphate.biosynthesis.I
+2026-02-16 12:48:00.738821 INFO::Creating boxplot for categorical data, Groups vs PWY.7282..4.amino.2.methyl.5.phosphomethylpyrimidine.biosynthesis..yeast.
+2026-02-16 12:48:00.846107 INFO::Creating boxplot for categorical data, Groups vs PWY.3841..folate.transformations.II
+2026-02-16 12:48:00.968698 INFO::Creating boxplot for categorical data, Groups vs PWY0.845..superpathway.of.pyridoxal.5..phosphate.biosynthesis.and.salvage
+2026-02-16 12:48:01.076817 INFO::Creating boxplot for categorical data, Groups vs X1CMET2.PWY..N10.formyl.tetrahydrofolate.biosynthesis
+2026-02-16 12:48:01.185017 INFO::Creating boxplot for categorical data, Groups vs PWY.7117..C4.photosynthetic.carbon.assimilation.cycle..PEPCK.type
+2026-02-16 12:48:01.310104 INFO::Creating boxplot for categorical data, Groups vs PYRIDNUCSYN.PWY..NAD.biosynthesis.I..from.aspartate.
+2026-02-16 12:48:01.416334 INFO::Creating boxplot for categorical data, Groups vs DTDPRHAMSYN.PWY..dTDP.L.rhamnose.biosynthesis.I
+2026-02-16 12:48:01.525728 INFO::Creating boxplot for categorical data, Groups vs TEICHOICACID.PWY..teichoic.acid..poly.glycerol..biosynthesis
+2026-02-16 12:48:01.650259 INFO::Creating boxplot for categorical data, Groups vs KETOGLUCONMET.PWY..ketogluconate.metabolism
+2026-02-16 12:48:01.760221 INFO::Creating boxplot for categorical data, Groups vs PWY.5723..Rubisco.shunt
+2026-02-16 12:48:01.884252 INFO::Creating boxplot for categorical data, Groups vs COBALSYN.PWY..adenosylcobalamin.salvage.from.cobinamide.I
+2026-02-16 12:48:01.990697 INFO::Creating boxplot for categorical data, Groups vs PWY.8004..Entner.Doudoroff.pathway.I
+2026-02-16 12:48:02.099498 INFO::Creating boxplot for categorical data, Groups vs PHOSLIPSYN.PWY..superpathway.of.phospholipid.biosynthesis.I..bacteria.
+2026-02-16 12:48:02.222174 INFO::Creating boxplot for categorical data, Groups vs PWY0.1261..anhydromuropeptides.recycling
+2026-02-16 12:48:02.331787 INFO::Creating boxplot for categorical data, Groups vs PWY.5083..NAD.NADH.phosphorylation.and.dephosphorylation
+2026-02-16 12:48:02.454224 INFO::Creating boxplot for categorical data, Groups vs PWY0.1241..ADP.L.glycero..beta..D.manno.heptose.biosynthesis
+2026-02-16 12:48:02.562737 INFO::Creating boxplot for categorical data, Groups vs P162.PWY..L.glutamate.degradation.V..via.hydroxyglutarate.
+2026-02-16 12:48:02.670592 INFO::Creating boxplot for categorical data, Groups vs PWY.5941..glycogen.degradation.II..eukaryotic.
+2026-02-16 12:48:02.796507 INFO::Creating boxplot for categorical data, Groups vs PWY4FS.7..phosphatidylglycerol.biosynthesis.I..plastidic.
+2026-02-16 12:48:02.905024 INFO::Creating boxplot for categorical data, Groups vs PWY4FS.8..phosphatidylglycerol.biosynthesis.II..non.plastidic.
+2026-02-16 12:48:03.027303 INFO::Creating boxplot for categorical data, Groups vs PWY.241..C4.photosynthetic.carbon.assimilation.cycle..NADP.ME.type
+2026-02-16 12:48:03.134358 INFO::Creating boxplot for categorical data, Groups vs PWY.5347..superpathway.of.L.methionine.biosynthesis..transsulfuration.
+2026-02-16 12:48:03.242641 INFO::Creating boxplot for categorical data, Groups vs PWY.6470..peptidoglycan.biosynthesis.V...beta..lactam.resistance.
+2026-02-16 12:48:03.365511 INFO::Creating boxplot for categorical data, Groups vs PWY.7237..myo...chiro..and.scillo.inositol.degradation
+2026-02-16 12:48:03.475699 INFO::Creating boxplot for categorical data, Groups vs PWY0.1479..tRNA.processing
+2026-02-16 12:48:03.598129 INFO::Creating boxplot for categorical data, Groups vs PWY.7219..adenosine.ribonucleotides.de.novo.biosynthesis
+2026-02-16 12:48:03.70418 INFO::Creating boxplot for categorical data, Groups vs GLYCOLYSIS.E.D..superpathway.of.glycolysis.and.Entner.Doudoroff
+2026-02-16 12:48:03.824584 INFO::Creating boxplot for categorical data, Groups vs PWY.6607..guanosine.nucleotides.degradation.I
+2026-02-16 12:48:03.945334 INFO::Creating boxplot for categorical data, Groups vs PWY.6386..UDP.N.acetylmuramoyl.pentapeptide.biosynthesis.II..lysine.containing.
+2026-02-16 12:48:04.05397 INFO::Creating boxplot for categorical data, Groups vs NAGLIPASYN.PWY..lipid.IVA.biosynthesis
+2026-02-16 12:48:04.175488 INFO::Creating boxplot for categorical data, Groups vs PWY.5177..glutaryl.CoA.degradation
+2026-02-16 12:48:04.284014 INFO::Creating boxplot for categorical data, Groups vs GLYCOCAT.PWY..glycogen.degradation.I..bacterial.
+2026-02-16 12:48:04.40759 INFO::Creating boxplot for categorical data, Groups vs PWY.2723..trehalose.degradation.V
+2026-02-16 12:48:04.51551 INFO::Creating boxplot for categorical data, Groups vs PWY.821..superpathway.of.sulfur.amino.acid.biosynthesis..Saccharomyces.cerevisiae.
+2026-02-16 12:48:04.62402 INFO::Creating boxplot for categorical data, Groups vs PWY.6892..thiazole.biosynthesis.I..E..coli.
+2026-02-16 12:48:04.804109 INFO::Creating boxplot for categorical data, Groups vs PWY.6385..peptidoglycan.biosynthesis.III..mycobacteria.
+2026-02-16 12:48:04.917103 INFO::Creating boxplot for categorical data, Groups vs PWY.5345..superpathway.of.L.methionine.biosynthesis..by.sulfhydrylation.
+2026-02-16 12:48:05.041322 INFO::Creating boxplot for categorical data, Groups vs PWY.7328..superpathway.of.UDP.glucose.derived.O.antigen.building.blocks.biosynthesis
+2026-02-16 12:48:05.148854 INFO::Creating boxplot for categorical data, Groups vs PWY66.389..phytol.degradation
+2026-02-16 12:48:05.262561 INFO::Creating boxplot for categorical data, Groups vs DAPLYSINESYN.PWY..L.lysine.biosynthesis.I
+2026-02-16 12:48:05.385405 INFO::Creating boxplot for categorical data, Groups vs GLUDEG.I.PWY..GABA.shunt
+2026-02-16 12:48:05.498381 INFO::Creating boxplot for categorical data, Groups vs PWY.5022..4.aminobutanoate.degradation.V
+2026-02-16 12:48:05.632006 INFO::Creating boxplot for categorical data, Groups vs PWY.6901..superpathway.of.glucose.and.xylose.degradation
+2026-02-16 12:48:05.745956 INFO::Creating boxplot for categorical data, Groups vs PWY.5686..UMP.biosynthesis
+2026-02-16 12:48:05.859097 INFO::Creating boxplot for categorical data, Groups vs PWY.7198..pyrimidine.deoxyribonucleotides.de.novo.biosynthesis.IV

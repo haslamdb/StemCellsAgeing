@@ -1,0 +1,3 @@
+"feature","metadata","value","coef","stderr","pval","name","qval","N","N.not.zero"
+"PWY0.845..superpathway.of.pyridoxal.5..phosphate.biosynthesis.and.salvage","Groups","Y",2.8808017542959,0.627447863990534,0.000176887257132896,"GroupsY",0.0213443956940361,22,9
+"PYRIDOXSYN.PWY..pyridoxal.5..phosphate.biosynthesis.I","Groups","Y",2.52365968187372,0.669953123542962,0.00121257246042365,"GroupsY",0.0492594594502077,22,11
