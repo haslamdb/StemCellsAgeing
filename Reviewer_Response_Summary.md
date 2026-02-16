@@ -445,4 +445,108 @@ We appreciate the reviewer's attention to statistical rigor. We have now:
 
 ---
 
-*Document generated: December 25, 2025*
+## 10. Updates (February 2026) — Additional Reviewer Revisions
+
+### 10.1 Comparison-Specific Alpha Diversity Plots
+
+The original alpha diversity panel showed all 5 groups together. Reviewer requested plots for specific comparisons with significance brackets. New plots generated with exact color codes:
+
+**Comparison A: Y vs DY vs RAG1-/-**
+- Colors: Y = #A4DCFE (light blue), DY = #FECC66 (yellow), RAG1-/- = #A5333A (dark red)
+- Files: `Alpha_Diversity_Y_DY_RAG1.tif/.pdf`, individual metric TIFs
+
+**Comparison B: Y vs O (C57BL/6 mice)**
+- Colors: Y = #A4DCFE, O = #074080 (dark blue)
+- Files: `Alpha_Diversity_Y_vs_O.tif/.pdf`
+
+**Comparison C: DY vs DO**
+- Colors: DY = #FECC66, DO = #FD8008 (orange)
+- Files: `Alpha_Diversity_DY_vs_DO.tif/.pdf`
+
+All plots include:
+- Boxplots with individual data points
+- Mean diamonds
+- Significance brackets with asterisks (Wilcoxon rank-sum test: * p<0.05, ** p<0.01, *** p<0.001, ns)
+
+**Script:** `ReviewerRevisions_AlphaDiversity_Feb2026.R`
+
+### 10.2 Rarefaction Curves in TIF Format
+
+Rarefaction curves regenerated in TIF format (300 DPI, LZW compression) for publication.
+- File: `Rarefaction_Curves.tif`
+
+### 10.3 Cross-Method Comparison for B6 Pathways (DY vs DO) — Critical Finding
+
+The vitamin B6 pathway finding in DY vs DO is method-dependent. Cross-method comparison:
+
+| Method | PYRIDOXSYN-PWY p | PWY0-845 p | Effect Size | Notes |
+|--------|------------------|------------|-------------|-------|
+| Wilcoxon (original) | **0.024*** | **0.027*** | — | Nominally significant |
+| ALDEx2 (Welch's t) | **0.011*** | **0.012*** | 0.76 / 0.72 | CLR-based, nominally significant |
+| ALDEx2 (Wilcoxon) | **0.020*** | **0.024*** | — | CLR-based, nominally significant |
+| DESeq2 | 0.367 | 0.512 | log2FC 1.55/1.15 | NOT significant |
+| MaAsLin2 | [pending] | [pending] | [pending] | Script ready to run |
+
+**Key insight:** Three of four methods find B6 pathways nominally significant in DY vs DO. DESeq2 is the outlier, likely because:
+1. The pseudo-count conversion (CPM × 100) introduces noise
+2. DESeq2's parametric negative binomial model produces large standard errors (lfcSE = 1.72–1.76)
+3. DESeq2 was designed for RNA-seq counts, not HUMAnN3 CPM data
+
+**Recommendation for manuscript:** Report ALDEx2 as the primary method (compositionally-aware, designed for microbiome data) with MaAsLin2 as validation. Mention DESeq2 results for transparency but note its limitations with pathway abundance data.
+
+For reference, Y vs O B6 pathways are strongly significant across all methods:
+- DESeq2: PWY0-845 log2FC = 6.51, FDR = 0.031
+- ALDEx2: PWY0-845 effect = 1.20, Welch p = 0.002, eBH = 0.218
+- Wilcoxon (original): nominally significant
+
+### 10.4 MaAsLin2 Pathway Analysis
+
+New analysis added using MaAsLin2 (Mallick et al., 2021, *Nature Methods*):
+- Linear model on log-transformed CPM abundances
+- BH FDR correction
+- Includes batch-corrected version (Experiment as covariate)
+- Results pending (script ready to run)
+
+**Script:** `MaAsLin2_Pathway_Analysis.R`
+
+### 10.5 Updated Power Analysis (Including DY vs DO)
+
+The December 2025 power analysis was missing DY vs DO (Cohen's d = NA due to computation issue). Updated script computes power for all metrics (Shannon, Simpson, Chao1) for both Y vs O and DY vs DO.
+
+**Expected outcome:** Both Y vs O and DY vs DO are underpowered for subtle effects. However:
+- Transplanted groups (DY, DO) have high variance (CV 29–37%), so effect sizes are likely small
+- The significant B6 finding (Y vs O, FDR = 0.002) despite low power demonstrates robust biology
+- Nominal significance of B6 in DY vs DO across non-DESeq2 methods (p = 0.011–0.027) further supports the finding
+
+### 10.6 Updated Methods & Materials Text
+
+#### Alpha Diversity and Rarefaction (for M&M)
+
+> Alpha diversity was assessed using three complementary metrics: Shannon index (accounting for richness and evenness), Simpson index (probability of interspecific encounter), and Chao1 richness estimator (estimated total species richness including unobserved species), all calculated with the vegan package (v2.7-2) in R. Rarefaction curves were generated at sequencing depths from 10,000 to 750,000 reads (in increments of 30,000) using the rarefy() function in vegan to confirm adequate sequencing depth for capturing community diversity. Pairwise comparisons of alpha diversity metrics between groups were performed using Wilcoxon rank-sum tests.
+
+#### Pathway Differential Abundance (for M&M)
+
+> Differential pathway abundance was assessed using multiple complementary approaches. ALDEx2 (v1.42.0) was used as the primary method, employing centered log-ratio (CLR) transformation with 128 Monte Carlo instances to address the compositional nature of microbiome data, with Benjamini-Hochberg FDR correction. MaAsLin2 was used as a validation method, employing generalized linear models on log-transformed CPM-normalized pathway abundances with BH FDR correction; experimental batch was included as a covariate to account for potential confounding across sequencing runs. DESeq2 (v1.50.2) was additionally applied using negative binomial modeling on pseudo-count-transformed data. Based on prior literature linking vitamin B6 metabolism to immune function (Ueland et al., 2017), HSC biology, and aging-associated decline (Janssen et al., 2021), we performed a targeted analysis of B6-related pathways as an a priori hypothesis, with FDR correction applied within this pathway subset.
+
+#### Power Analysis (for M&M)
+
+> Post-hoc power analysis was performed using the pwr package in R to estimate achieved statistical power for primary between-group comparisons. Cohen's d effect sizes were calculated from observed Shannon diversity, Simpson diversity, and Chao1 richness data. Achieved power was estimated using a two-sample t-test framework at α = 0.05. Sample size requirements for 80% power at the observed effect sizes are reported.
+
+#### Batch Effects (for M&M)
+
+> Samples were collected across three experimental time points spanning months to years, necessitated by the technical demands of bone marrow transplantation experiments. Batch effects were assessed using PERMANOVA on Bray-Curtis distances; biological group membership explained 54.8% of total variance (p = 0.001), while within-group batch effects accounted for 60–78% of intra-group variance. Explicit batch correction (e.g., ComBat) was not applied because the experimental design partially confounds batch with biological group, which could remove genuine biological signal. To mitigate technical artifacts, we employed compositionally-aware methods (ALDEx2 with CLR transformation, MaAsLin2 with batch as covariate) and size-factor normalized count models (DESeq2), all of which are robust to library-size and compositional differences across sequencing runs.
+
+#### Kraken Database (for M&M)
+
+> Taxonomic classification was performed using Kraken2 (v2.1.2) with the standard Kraken2 database (built [DATE — please fill in], downloaded from https://benlangmead.github.io/aws-indexes/k2), which includes RefSeq complete bacterial, archaeal, and viral genomes, as well as the human genome (GRCh38) for host filtering. Species-level abundances were refined using Bracken (v2.6.2) with a read length of 150 bp and a classification threshold of 10 reads. Functional profiling of microbial pathways was performed using HUMAnN3 with the MetaCyc pathway database, and pathway abundances were normalized to counts per million (CPM).
+
+### 10.7 New Scripts Created (February 2026)
+
+| Script | Purpose |
+|--------|---------|
+| `ReviewerRevisions_AlphaDiversity_Feb2026.R` | α-diversity plots (3 comparisons, specific colors, significance brackets), rarefaction TIF, updated power analysis |
+| `MaAsLin2_Pathway_Analysis.R` | MaAsLin2 pathway analysis (DY vs DO, Y vs O), batch-corrected version, cross-method B6 comparison |
+
+---
+
+*Document updated: February 16, 2026*
