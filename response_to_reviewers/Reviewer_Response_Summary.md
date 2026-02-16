@@ -102,14 +102,14 @@ Differential pathway abundance was assessed using four complementary approaches,
 
 | Method | Total Pathways | Sig (FDR < 0.1) | Nominally Sig (p < 0.05) |
 |--------|----------------|-----------------|--------------------------|
-| ALDEx2 (no batch) | 369 | 0 | — |
-| ALDEx2 GLM (batch-corrected) | 369 | — | — |
+| ALDEx2 (no batch) | 373 | 0 | 5 |
+| ALDEx2 GLM (batch-corrected) | 369 | 3 | 19 |
 | DESeq2 (no batch) | 328 | 11 | 14 |
-| DESeq2 (batch-corrected) | 328 | 12 | 19 |
-| MaAsLin2 (no batch) | 310 | 0 | — |
-| MaAsLin2 (batch-corrected) | 310 | — | — |
+| DESeq2 (batch-corrected) | 328 | 16 | 23 |
+| MaAsLin2 (no batch) | 310 | 0 | 3 |
+| MaAsLin2 (batch-corrected) | 310 | 21 | 26 |
 
-**Interpretation:** No method finds genome-wide FDR-significant B6 pathways in an untargeted analysis of DY vs DO. However, targeted B6 analysis (Section 3) reveals a robust signal. Batch-corrected DESeq2 identifies 12 pathways at FDR < 0.1.
+**Interpretation:** Batch correction dramatically increases the number of genome-wide significant pathways across all three methods (ALDEx2: 0→3, DESeq2: 11→16, MaAsLin2: 0→21 at FDR < 0.1), confirming that batch effects were masking real biological signal. B6 pathways are not among the genome-wide FDR-significant hits in an untargeted analysis; however, targeted B6 analysis (Section 3) reveals a robust signal confirmed across 4/5 methods.
 
 ### Output Files
 - `ALDEx2_Pathways_DY_vs_DO_Full.csv`, `ALDEx2_Pathways_DY_vs_DO_BatchCorrected_Full.csv`
@@ -331,7 +331,7 @@ However, the B6 pathway finding demonstrates robust biology despite limited powe
 | **B6 pathways (Y vs O)** | **6-fold higher in Young** (multiple methods, FDR < 0.05) | Age-associated decline in B6 biosynthesis |
 | **B6 pathways (DY vs DO)** | **Significant in 4/5 methods after batch correction** | Young HSCs partially restore B6 biosynthesis |
 | **Batch correction** | **Strengthens B6 signal across all methods** | Batch was masking real biological signal |
-| **DESeq2 (batch-corrected)** | 12 pathways differ DY vs DO (FDR < 0.1) | Batch correction reveals additional signal |
+| **Genome-wide (batch-corrected)** | ALDEx2: 3, DESeq2: 16, MaAsLin2: 21 pathways (FDR < 0.1) | Batch correction reveals widespread additional signal |
 | **Power analysis** | 12% power for Y vs O; 91% for Y vs RAG1 | Adequately powered for large effects only |
 
 ### Strengths
