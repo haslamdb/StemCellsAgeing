@@ -1,4 +1,0 @@
-"Pathway",".y.","n","statistic","df","p","method","p.adj","p.adj.signif"
-"PWY.7204:pyridoxal.5'.phosphate.salvage.II.(plants)","Abundance",59,NA,4,NA,"Kruskal-Wallis",NA,""
-"PWY0.845:superpathway.of.pyridoxal.5'.phosphate.biosynthesis.and.salvage","Abundance",59,16.1488747509363,4,0.00283,"Kruskal-Wallis",0.00566,"**"
-"PYRIDOXSYN.PWY:pyridoxal.5'.phosphate.biosynthesis.I","Abundance",59,14.0444213229155,4,0.00715,"Kruskal-Wallis",0.00715,"**"
