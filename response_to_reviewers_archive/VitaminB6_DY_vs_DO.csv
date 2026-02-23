@@ -1,0 +1,4 @@
+"Pathway","group1","group2","n1","n2","statistic","p","p.adj"
+"PWY0.845:superpathway.of.pyridoxal.5'.phosphate.biosynthesis.and.salvage","DY","DO",15,15,163.5,0.0271433979795702,0.0271433979795702
+"PYRIDOXSYN.PWY:pyridoxal.5'.phosphate.biosynthesis.I","DY","DO",15,15,164.5,0.0242464861509069,0.0271433979795702
+"PWY.7204:pyridoxal.5'.phosphate.salvage.II.(plants)","DY","DO",15,15,112.5,NA,NA
